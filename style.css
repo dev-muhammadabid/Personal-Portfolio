@@ -492,7 +492,7 @@ h2 span {
 }
 
 #contact_btn {
-  color: rgba(245, 245, 245, 0.823);
+  color:green;
   border: 2px solid green;
   border-radius: 10px;
   padding: 10px 5px;

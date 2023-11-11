@@ -194,17 +194,17 @@
 
     <!-- CONTACT-SECTION   -->
     <section class="contact">
-      <h4 id="contactme">Contact Me</h4>
+      <h4 id="contactme">Contact Me</h4>  
       <br><br>
       <div class="contact-container">
         <div id="form-card">
-          <form action="">
+          <form onsubmit="sendEmail(); reset(); return false;">
             <p>Get In Touch...</p><br><br>
-            <input type="text" id="contact_name" placeholder="Your Name" name="name" value="">
-            <input type="email" id="contact_email" placeholder="Your Email" name="name" value="">
-            <input type="number" id="contact_number" placeholder="Your Number" name="number" value="">
+            <input type="text" id="contact_name" placeholder="Your Name" name="name" required>
+            <input type="email" id="contact_email" placeholder="Your Email" name="name" required>
+            <input type="number" id="contact_number" placeholder="Your Number" name="number" required>
             <br><br>
-            <input type="button" id="contact_btn" value="Submit">
+            <button id="contact_btn">Submit</button>
           </form>
         </div>
       </div>
@@ -231,6 +231,7 @@
 
   <!-- JAVASCRIPT LINK     -->
   <script src="index.js"></script>
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
 </body>
 
 </html>
