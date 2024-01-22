@@ -10,8 +10,6 @@ I am passionate about technology and innovation. As a Front-End Developer, I hav
 
 Education
 [Bachelor's, Integral University, 2023],
-[Intermediate, VMIC, 2020],
-[Matriculate, All Saint's School, 2017].
 
 
 Skills
