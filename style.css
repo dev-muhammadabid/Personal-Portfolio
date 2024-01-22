@@ -40,10 +40,6 @@ html {
   z-index: 1;
 }
 
-.navbar:hover {
-  opacity: 1;
-}
-
 /* NAVBAR LOGO */
 #navbar_logo {
   margin: 30px 50px;
@@ -370,13 +366,16 @@ h2 {
 }
 
 #card-1,
-#card-2,
-#card-3 {
+#card-2 {
 
   border: 1px green solid;
   padding: 30px 40px;
-  cursor: pointer;
   transition: 1s;
+}
+
+#card-1 a,
+#card-2 a {
+  color: rgba(245, 245, 245, 0.823);
 }
 
 #card-1:hover {
@@ -389,15 +388,9 @@ h2 {
   filter: drop-shadow(-10px -10px 10px green);
 }
 
-#card-3:hover {
-  transform: scale(1.1);
-  filter: drop-shadow(-10px -10px 10px green);
-}
-
-
 h2 span {
   font-size: 1.5rem;
-  color: green;
+  color: #008000;
   font-family: "Silkscreen", cursive;
 }
 
@@ -431,7 +424,73 @@ h2 span {
   }
 }
 
+/* CERTIFICATIONS-SECTION */
+.certifications {
+  color: rgba(245, 245, 245, 0.823);
+  padding-top: 10%;
+  padding-left: 22%;
+  padding-right: 22%;
+}
 
+#certificate {
+  font-size: 2.2rem;
+  color: green;
+  font-family: "Silkscreen", cursive;
+}
+
+.certificate_container {
+  display: flex;
+  padding: 5px 30px;
+}
+
+.card_c1 {
+  text-align: center;
+  padding: 10px;
+  margin: 5px;
+  cursor: pointer;
+  border: 2px solid green;
+  transition: 1s;
+}
+
+.card_c1 h2{
+  color: green;
+  font-family: "Silkscreen", cursive;
+  font-size: 1.5em;
+}
+
+.card_c1 a {
+  text-decoration: none;
+  color: rgba(245, 245, 245, 0.823);
+}
+
+.card_c1:hover {
+  transform: scale(1.1);
+  filter: drop-shadow(-10px -10px 10px green);
+  color: #008000;
+}
+
+/* RESPONSIVE EDU-SECTION */
+@media only screen and (max-width:950px) {
+  .certifications {
+    padding-top: 20%;
+    padding-left: 12%;
+    padding-right: 12%;
+  }
+
+}
+
+@media only screen and (max-width:550px) {
+  .certifications {
+    padding-top: 20%;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  #card_c1:hover {
+    transform: scale(0.9);
+  }
+
+}
 
 /* CONTACT-SECTION */
 .contact {
@@ -466,7 +525,7 @@ h2 span {
 
 #contact_name {
   margin: 15px 0px;
-  color: green;
+  color: #008000;
   border: 2px solid green;
   border-radius: 10px;
   padding: 10px 10px;
