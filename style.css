@@ -80,14 +80,14 @@ html {
   padding: 5px;
   border-radius: 10px;
   justify-content: center;
-  transition: 0.5s;
+  transition: 1s;
 }
 
-.navbar ul a button:hover {
+.navbar ul a button:hover{
   font-family: "Silkscreen", cursive;
   cursor: pointer;
   background-color: #11223b;
-  color: green;
+  color: #008000;
   transform: scale(1.2);
 }
 
