@@ -5,338 +5,512 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="description" content="Are you looking for someone to bring your digital ideas to life with seamless user experiences? Well, you've come to the right place! I'm a dedicated front-end developer with a knack for turning design concepts into functional, responsive, and visually appealing web applications.
-    In my skills, I am Proficient in HTML5, CSS3, and JavaScript, Responsive Design, UI/UX Implementation, Front-End Frameworks, and Version Control/Git. I'm always open to connecting with fellow developers, designers, and anyone passionate about tech. Feel free to contact me for collaboration, networking, or just a good coding conversation!
-    Thank you for visiting my profile. " />
+  <meta name="description"
+    content="Muhammad Abid — Backend-focused Software Developer specializing in Spring Boot, Redis, WebSocket, and scalable distributed systems. Building high-performance, real-time applications." />
   <meta name="keywords"
-    content="Front-End Developer, Web Designer, Web Developer, Freelancer, Software Developer, Software Engineer, Responsive Design, UI/UX" />
+    content="Backend Developer, Spring Boot, Java, Redis, WebSocket, REST API, Microservices, Software Engineer, Full Stack, PostgreSQL, Docker, JWT" />
   <meta name="author" content="Muhammad Abid" />
 
-  <!-- CSS Link -->
+  <!-- Open Graph -->
+  <meta property="og:title" content="Muhammad Abid — Software Developer" />
+  <meta property="og:description" content="Backend-focused developer building scalable, real-time systems." />
+  <meta property="og:image" content="Images/main_logo.png" />
+
+  <!-- CSS -->
   <link rel="stylesheet" href="style.css" />
 
-  <!--FAVICONS-->
-  <link rel="icon" type="png" href="Images/main_logo.png" />
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="Images/main_logo.png" />
 
-  <!-- ICONSCOUT LINK -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 
-  <!-- TITLE -->
-  <title>Muhammad Abid - Portfolio</title>
+  <!-- Title -->
+  <title>Muhammad Abid — Software Developer</title>
 </head>
 
 <body>
   <!-- PRELOADER -->
-  <div id="preloader"></div>
+  <div id="preloader">
+    <div class="preloader-inner">
+      <div class="preloader-ring"></div>
+      <span class="preloader-text">Loading...</span>
+    </div>
+  </div>
+
+  <!-- CURSOR GLOW -->
+  <div class="cursor-glow" id="cursorGlow"></div>
+
   <header>
     <!-- NAVBAR -->
-    <nav class="navbar">
-      <!-- LOGO -->
-      <a href="#"><img src="Images/main_logo.png" id="navbar_logo" height="70px" width="70px" alt="404 Error" /></a>
+    <nav class="navbar" id="navbar">
+      <a href="#" aria-label="Home">
+        <img src="Images/main_logo.png" id="navbar_logo" height="60px" width="60px" alt="Muhammad Abid Logo" loading="lazy" />
+      </a>
       <ul id="navbar_list">
-        <li><a href="#aboutme">About Me</a></li>
+        <li><a href="#aboutme">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
         <li><a href="#education">Education</a></li>
-        <!-- <li><a href="#">Work</a></li> -->
         <li><a href="#certificate">Certifications</a></li>
-        <a href="#contactme"><button>Hire Me</button></a>
+        <a href="#contactme"><button class="nav-btn">Hire Me</button></a>
       </ul>
-      <!-- HAMBURGER MENU -->
-      <div class="navbar_menu">
-        <img width="30" height="30" src="https://img.icons8.com/ios-filled/50/40C057/menu--v6.png" alt="menu--v6" />
+      <div class="navbar_menu" aria-label="Toggle menu" role="button" tabindex="0">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
       </div>
     </nav>
+
     <!-- DROPDOWN MENU -->
-    <div class="dropdown_menu">
-      <li><a href="#aboutme">About Me</a></li>
+    <div class="dropdown_menu" id="dropdownMenu">
+      <li><a href="#aboutme">About</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#projects">Projects</a></li>
       <li><a href="#education">Education</a></li>
-      <!-- <li><a href="#">Work</a></li> -->
       <li><a href="#certificate">Certifications</a></li>
-      <li>
-        <a href="#contactme"><button>Hire Me</button></a>
-      </li>
+      <li><a href="#contactme"><button>Hire Me</button></a></li>
     </div>
   </header>
 
   <main>
-    <!-- INTRO SECTION -->
-    <section class="intro">
-      <p1><span>Hey, I am</span></p1><br />
-      <h3>Muhammad <span id="abii">Abid</span></h3>
-      <p2>I build things for the world.</p2><br /><br />
-      <p3>
-        I’m a Software Developer specializing in building and designing
-        exceptional digital experiences. Currently, I’m focused to enhance my
-        skills.</p3>
-    </section>
-    <br /><br /><br /><br />
-
-    <!-- ABOUT-SECTION -->
-    <section class="about">
-      <h4 id="aboutme">About Me</h4>
-      <br />
-      <p4>
-        Hey! Myself <span>Abid</span> and I enjoy creating things that live on
-        the internet. <br />
-        If you looking for someone to bring your digital ideas to life with
-        seamless user experiences? Well, you've come to the right place! I'm a
-        dedicated <span>software developer</span> with a knack for turning
-        design concepts into <span>functional, responsive,</span> and
-        <span>visually appealing web or mobile applications.</span> <br />I thrive in challenging environments,
-        constantly seeking opportunities to expand my skill set and innovate.
-        I'm always <span>open to connecting</span> with fellow
-        <span>developers, designers, and anyone passionate about tech.</span>
-        Feel free to contact me for collaboration, networking, or just a good
-        coding conversation! <br />
-        <span>Thank you for visiting my website.</span>
-      </p4>
-      <br>
-
-      <!-- SKILLS-SECTION -->
-      <div class="skillset">
-        <p id="tech_heading">Tech Stack</p>
-        <br>
-        <!-- TECH-LOGO -->
-        <div class="tech_logo">
-          <!-- LOGOS -->
-          <div class="card">
-            <a href="https://overapi.com/java" target="_blank"><img width="50" height="50"
-                src="https://img.icons8.com/ios/50/40C057/java-coffee-cup-logo--v1.png" alt="404java" /></a>
-            <h2>Java</h2>
-          </div>
-          <div class="card">
-            <a href="https://overapi.com/java" target="_blank"><img width="50" height="50"
-                src="https://img.icons8.com/color/50/spring-logo.png" alt="404springboot" /></a>
-            <h2>SpringBoot</h2>
-          </div>
-          <div class="card">
-            <a href="https://www.geeksforgeeks.org/rest-api-introduction/" target="_blank"><img width="50" height="50"
-                src="https://img.icons8.com/ios-filled/50/40C057/api.png" alt="404api" /></a>
-            <h2>RestAPI</h2>
-          </div>
-          <div class="card">
-            <a href="https://microservices.io/" target="_blank"><img width="50" height="50"
-                src="https://img.icons8.com/ios/50/008000/centralized-network.png" alt="404api" /></a>
-            <h2>MicroServices</h2>
-          </div>
-          <div class="card">
-            <a href="https://overapi.com/mysql" target="_blank"><img width="50" height="50"
-                src="https://img.icons8.com/40C057/50/mysql.png" alt="404api" /></a>
-            <h2>MySql</h2>
-          </div>
-          <div class="card">
-            <a href="https://www.mongodb.com/" target="_blank"><img width="50" height="50"
-                src="https://img.icons8.com/color/50/40C057/mongodb.png" alt="404mongo" /></a>
-            <h2>MongoDB</h2>
-          </div>
-          <div class="card">
-            <a href="https://www.coursera.org/in/articles/what-is-agile-a-beginners-guide" target="_blank"><img
-                width="50" height="50"
-                src="https://img.icons8.com/external-flatart-icons-solid-flatarticons/50/40C057/external-agile-web-design-and-development-flatart-icons-solid-flatarticons.png"
-                alt="404agile" /></a>
-            <h2>Agile</h2>
-          </div>
-          <div class="card">
-            <a href="https://overapi.com/gift" target="_blank"><img width="50" height="50"
-                src="https://img.icons8.com/ios-filled/50/40C057/git.png" alt="404git" /></a>
-            <h2>Git</h2>
-          </div>
-          <div class="card">
-            <a href="https://docs.github.com/en" target="_blank"><img width="50" height="50"
-                src="https://img.icons8.com/glyph-neue/64/40C057/github.png" alt="404github" /></a>
-            <h2>GitHub</h2>
-          </div>
+    <!-- ═══════════════════════════════════════════
+         INTRO SECTION — DO NOT CHANGE IDENTITY
+    ═══════════════════════════════════════════ -->
+    <section class="intro" id="home">
+      <div class="intro-content">
+        <p class="intro-greeting reveal-up"><span>Hey, I am</span></p>
+        <h1 class="intro-name reveal-up">Muhammad <span id="abii">Abid</span></h1>
+        <p class="intro-tagline reveal-up">I build things for the world.</p>
+        <p class="intro-desc reveal-up">
+          I'm a Software Developer specializing in building and designing
+          exceptional digital experiences. Currently focused on scalable
+          backend systems, real-time applications, and distributed architecture.
+        </p>
+        <div class="intro-cta reveal-up">
+          <a href="#projects" class="btn-primary">View My Work</a>
+          <a href="#contactme" class="btn-outline">Get In Touch</a>
         </div>
-        <div class="tech_logo">
-          <div class="card">
-            <a href="https://overapi.com/javascript" target="_blank"><img width="50" height="50"
-                src="https://img.icons8.com/ios-filled/50/40C057/javascript-logo.png" alt="404javascript" /></a>
-            <h2>JS</h2>
-          </div>
-          <div class="card">
-            <a href="https://overapi.com/html" target="_blank"><img width="50" height="50"
-                src="https://img.icons8.com/ios-filled/50/40C057/html-5--v1.png" alt="404html" /></a>
-            <h2>HTML</h2>
-          </div>
-          <div class="card">
-            <a href="https://overapi.com/css" target="_blank"><img width="50" height="50"
-                src="https://img.icons8.com/ios-filled/50/40C057/css3.png" alt="404css3" /></a>
-            <h2>CSS</h2>
-          </div>
-          <div class="card">
-            <a href="https://getbootstrap.com/docs/5.3/getting-started/introduction/" target="_blank"><img width="50"
-                height="50"
-                src="https://img.icons8.com/external-tal-revivo-bold-tal-revivo/50/40C057/external-bootstrap-a-free-and-open-source-css-framework-logo-bold-tal-revivo.png"
-                alt="404Bootstrap" /></a>
-            <h2>Bootstrap</h2>
-          </div>
-          <div class="card">
-            <a href="https://tailwindcss.com/docs/installation" target="_blank"><img width="50" height="50"
-                src="https://img.icons8.com/ios-filled/50/40C057/css-filetype.png" alt="404TailwindCSS" /></a>
-            <h2>Tailwind</h2>
+      </div>
+      <!-- Animated background grid -->
+      <div class="grid-bg" aria-hidden="true"></div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════
+         ABOUT SECTION
+    ═══════════════════════════════════════════ -->
+    <section class="about section-padding" id="aboutme">
+      <div class="section-inner">
+        <h2 class="section-title reveal-up">About Me</h2>
+        <div class="about-grid">
+          <div class="about-text reveal-left">
+            <p>
+              Hey! I'm <span class="highlight">Abid</span> — a backend-focused
+              <span class="highlight">Software Developer</span> who enjoys building things that live on the internet.
+            </p>
+            <br />
+            <p>
+              I specialize in designing <span class="highlight">scalable, real-time systems</span> using
+              Spring Boot, Redis, and WebSocket. I'm passionate about solving
+              <span class="highlight">latency, scalability, and reliability</span> challenges in distributed environments.
+            </p>
+            <br />
+            <p>
+              I thrive in challenging environments, constantly seeking opportunities to expand my skill set.
+              I'm always <span class="highlight">open to connecting</span> with fellow
+              <span class="highlight">developers, designers, and anyone passionate about tech.</span>
+            </p>
+            <br />
+            <p><span class="highlight">Thank you for visiting my website.</span></p>
           </div>
 
-          <div class="card">
-            <a href="https://www.canva.com/docs/" target="_blank"><img width="50" height="50"
-                src="https://img.icons8.com/ios-filled/50/40C057/canva.png" alt="404canva" /></a>
-            <h2>Canva</h2>
+          <!-- SKILLS -->
+          <div class="skills-panel reveal-right">
+            <p class="skills-heading">Tech Stack</p>
+
+            <div class="skill-category">
+              <span class="skill-cat-label">Backend</span>
+              <div class="skill-tags">
+                <span class="skill-tag"><a href="https://overapi.com/java" target="_blank" rel="noopener"><img src="https://img.icons8.com/ios/24/40C057/java-coffee-cup-logo--v1.png" alt="Java" loading="lazy" />Java</a></span>
+                <span class="skill-tag"><a href="https://spring.io/projects/spring-boot" target="_blank" rel="noopener"><img src="https://img.icons8.com/color/24/spring-logo.png" alt="Spring Boot" loading="lazy" />Spring Boot</a></span>
+                <span class="skill-tag"><a href="https://www.geeksforgeeks.org/rest-api-introduction/" target="_blank" rel="noopener"><img src="https://img.icons8.com/ios-filled/24/40C057/api.png" alt="REST API" loading="lazy" />REST API</a></span>
+                <span class="skill-tag"><a href="https://microservices.io/" target="_blank" rel="noopener"><img src="https://img.icons8.com/ios/24/40C057/centralized-network.png" alt="Microservices" loading="lazy" />Microservices</a></span>
+                <span class="skill-tag"><img src="https://img.icons8.com/color/24/redis.png" alt="Redis" loading="lazy" />Redis</span>
+                <span class="skill-tag"><img src="https://img.icons8.com/ios-filled/24/40C057/api-settings.png" alt="WebSocket" loading="lazy" />WebSocket</span>
+                <span class="skill-tag"><img src="https://img.icons8.com/ios-filled/24/40C057/lock.png" alt="JWT" loading="lazy" />JWT / Security</span>
+              </div>
+            </div>
+
+            <div class="skill-category">
+              <span class="skill-cat-label">Databases</span>
+              <div class="skill-tags">
+                <span class="skill-tag"><a href="https://overapi.com/mysql" target="_blank" rel="noopener"><img src="https://img.icons8.com/color/24/mysql-logo.png" alt="MySQL" loading="lazy" />MySQL</a></span>
+                <span class="skill-tag"><img src="https://img.icons8.com/color/24/postgreesql.png" alt="PostgreSQL" loading="lazy" />PostgreSQL</span>
+                <span class="skill-tag"><a href="https://www.mongodb.com/" target="_blank" rel="noopener"><img src="https://img.icons8.com/color/24/mongodb.png" alt="MongoDB" loading="lazy" />MongoDB</a></span>
+              </div>
+            </div>
+
+            <div class="skill-category">
+              <span class="skill-cat-label">Frontend</span>
+              <div class="skill-tags">
+                <span class="skill-tag"><a href="https://overapi.com/javascript" target="_blank" rel="noopener"><img src="https://img.icons8.com/ios-filled/24/40C057/javascript-logo.png" alt="JavaScript" loading="lazy" />JavaScript</a></span>
+                <span class="skill-tag"><a href="https://overapi.com/html" target="_blank" rel="noopener"><img src="https://img.icons8.com/ios-filled/24/40C057/html-5--v1.png" alt="HTML" loading="lazy" />HTML5</a></span>
+                <span class="skill-tag"><a href="https://overapi.com/css" target="_blank" rel="noopener"><img src="https://img.icons8.com/ios-filled/24/40C057/css3.png" alt="CSS" loading="lazy" />CSS3</a></span>
+                <span class="skill-tag"><img src="https://img.icons8.com/color/24/react-native.png" alt="ReactJS" loading="lazy" />ReactJS</span>
+                <span class="skill-tag"><img src="https://img.icons8.com/ios-filled/24/40C057/css-filetype.png" alt="Tailwind" loading="lazy" />Tailwind CSS</span>
+              </div>
+            </div>
+
+            <div class="skill-category">
+              <span class="skill-cat-label">Tools & Concepts</span>
+              <div class="skill-tags">
+                <span class="skill-tag"><a href="https://overapi.com/gift" target="_blank" rel="noopener"><img src="https://img.icons8.com/ios-filled/24/40C057/git.png" alt="Git" loading="lazy" />Git</a></span>
+                <span class="skill-tag"><a href="https://docs.github.com/en" target="_blank" rel="noopener"><img src="https://img.icons8.com/glyph-neue/24/40C057/github.png" alt="GitHub" loading="lazy" />GitHub</a></span>
+                <span class="skill-tag"><img src="https://img.icons8.com/color/24/docker.png" alt="Docker" loading="lazy" />Docker</span>
+                <span class="skill-tag"><img src="https://img.icons8.com/external-flatart-icons-solid-flatarticons/24/40C057/external-agile-web-design-and-development-flatart-icons-solid-flatarticons.png" alt="Agile" loading="lazy" />Agile</span>
+                <span class="skill-tag"><img src="https://img.icons8.com/ios-filled/24/40C057/artificial-intelligence.png" alt="AI" loading="lazy" />LLM / Gen AI</span>
+              </div>
+            </div>
           </div>
         </div>
       </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════
+         EXPERIENCE SECTION
+    ═══════════════════════════════════════════ -->
+    <section class="experience section-padding" id="experience">
+      <div class="section-inner">
+        <h2 class="section-title reveal-up">Work Experience</h2>
+        <div class="timeline">
+
+          <div class="timeline-item reveal-left">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card glass-card">
+              <div class="timeline-header">
+                <div>
+                  <h3 class="timeline-role">Freelance Software Developer</h3>
+                  <p class="timeline-company">Social Media Application</p>
+                </div>
+                <span class="timeline-date">Jan 2026 — Present</span>
+              </div>
+              <ul class="timeline-points">
+                <li>Designed and developed a scalable backend using <span class="highlight">Spring Boot, PostgreSQL, and Redis</span> for real-time location-based user discovery.</li>
+                <li>Implemented <span class="highlight">Redis GEO queries</span> enabling efficient nearby user matching within ~100m radius, improving response latency.</li>
+                <li>Integrated caching, rate limiting, and <span class="highlight">push notifications (Firebase FCM)</span> for performance and reliability.</li>
+              </ul>
+              <div class="timeline-tags">
+                <span>Spring Boot</span><span>Redis</span><span>PostgreSQL</span><span>Firebase FCM</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline-item reveal-right">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card glass-card">
+              <div class="timeline-header">
+                <div>
+                  <h3 class="timeline-role">Software Engineer Trainee</h3>
+                  <p class="timeline-company">Prabhavati Digital Services</p>
+                </div>
+                <span class="timeline-date">May 2025 — Dec 2025</span>
+              </div>
+              <ul class="timeline-points">
+                <li>Developed backend services using <span class="highlight">Spring Boot</span> and designed RESTful APIs.</li>
+                <li>Improved API performance by approximately <span class="highlight">60%</span> through query optimization.</li>
+                <li>Implemented <span class="highlight">JWT-based authentication</span> and role-based authorization.</li>
+                <li>Containerized applications using <span class="highlight">Docker</span> for consistent deployments.</li>
+              </ul>
+              <div class="timeline-tags">
+                <span>Spring Boot</span><span>JWT</span><span>Docker</span><span>REST API</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
       </div>
     </section>
 
-    <!-- EDUCATION-SECTION -->
-    <section class="edu">
-      <h4 id="education">Education</h4><br><br>
-      <div class="edu_container">
-        <div id="card-1">
-          <a href="Images/mcaR.png" target="_blank">
-            <h2> <span>Master's</span></h2>
-            <p>MCA | 2023 - 2025</p>
-            <p><span>Master's Of Computer Application </span></p>
-            <p>Integral University, Lucknow</p>
-          </a>
-        </div>
-        <br>
-        <div id="card-2">
-          <a href="Images/BCA_Degree.jpg" target="_blank">
-            <h2> <span>Bachelor's</span></h2>
-            <p>BCA | 2020 - 2023</p>
-            <p><span>Bachelor's Of Computer Application </span></p>
-            <p>Integral University, Lucknow</p>
-          </a>
-        </div>
-    </section>
-    <br><br>
+    <!-- ═══════════════════════════════════════════
+         PROJECTS SECTION
+    ═══════════════════════════════════════════ -->
+    <section class="projects section-padding" id="projects">
+      <div class="section-inner">
+        <h2 class="section-title reveal-up">Projects</h2>
+        <div class="projects-grid">
 
-    <!-- CERTIFICATIONS-SECTION   -->
-    <section class="certifications">
-      <h4 id="certificate">Certifications</h4>
-      <br><br>
-      <!-- <div class="certificate-container">
-        <div class="card_c1">
-          <a href="PDFs/Cisco _ Full Stack Development with MERN.pdf" target="_blank"><img width="70" height="50"
-              src="Images/Cisco-Logo.png" alt="404html" />
-            <h2 style="font-family: Silkscreen; font-size: 1.5em;">Cisco</h2>
-            <p>Full Stack Development with MERN</p>
-          </a>
-        </div> -->
-        <br>
-        <div class="card_c1">
-          <a href="PDFs/Meta _ Back-End Developement.pdf" target="_blank"><img width="50" height="50"
-              src="https://img.icons8.com/fluency/50/meta.png" alt="404html" />
-            <h2>Meta</h2>
-            <p>Introduction To Back-End Development</p>
-          </a>
-        </div>
-        <br>
-        <div class="card_c1">
-          <a href="PDFs/Meta _ Front-End Development.pdf" target="_blank"><img width="50" height="50"
-              src="https://img.icons8.com/fluency/50/meta.png" alt="404html" />
-            <h2>Meta</h2>
-            <p>Introduction To Front-End Development</p>
-          </a>
-        </div>
-        <br>
-        <div class="card_c1">
-          <a href="PDFs/Meta _ Introduction to Databases.pdf" target="_blank"><img width="50" height="50"
-              src="https://img.icons8.com/fluency/50/meta.png" alt="404html" />
-            <h2>Meta</h2>
-            <p>Introduction To Database</p>
-          </a>
-        </div>
-        <br>
-        <div class="card_c1">
-          <a href="PDFs/Meta _ HTML and CSS in depth.pdf" target="_blank"><img width="50" height="50"
-              src="https://img.icons8.com/fluency/50/meta.png" alt="404html" />
-            <h2>Meta</h2>
-            <p>HTML & CSS in Depth</p>
-          </a>
-        </div>
-        <br>
-        <div class="card_c1">
-          <a href="PDFs/Meta _ Programming with JavaScript.pdf" target="_blank"><img width="50" height="50"
-              src="https://img.icons8.com/fluency/50/meta.png" alt="404html" />
-            <h2>Meta</h2>
-            <p>Programming with Javascript</p>
-          </a>
-        </div>
-        <br>
-        <div class="card_c1">
-          <a href="PDFs/Meta _ Version Control.pdf" target="_blank"><img width="50" height="50"
-              src="https://img.icons8.com/fluency/50/meta.png" alt="404html" />
-            <h2>Meta</h2>
-            <p>Version Control</p>
-          </a>
-        </div>
-        <br>
-        <div class="card_c1">
-          <a href="PDFs/Accenture _ USER EXPERIENCE.pdf" target="_blank"><img width="70" height="50"
-              src="Images/Accenture-Logo.png" alt="404html" />
-            <h2>Accenture</h2>
-            <p>User Experience</p>
-          </a>
-        </div>
-        <br>
-        <div class="card_c1">
-          <a href="PDFs/Infosys _ Software Engineering Agile Software Development.pdf" target="_blank"><img width="80"
-              height="50" src="Images/Infosys-Logo.png" alt="404html" />
-            <h2>Infosys</h2>
-            <p>Software Engineering and Agile Software Development</p>
-          </a>
-        </div>
-        <br>
-        <!-- <div class="card_c1">
-          <a href="PDFs/Google _ The Fundamental of Digital Marketing.pdf" target="_blank"><img width="50" height="50"
-              src="https://img.icons8.com/color/50/google-logo.png" alt="404html" />
-            <h2>Google</h2>
-            <p>The Fundamental of Digital Marketing</p>
-          </a>
-        </div> -->
-        <br>
+          <!-- VAULTLOCK -->
+          <div class="project-card glass-card reveal-up" data-tilt>
+            <div class="project-card-header">
+              <div class="project-icon">
+                <i class="fas fa-lock"></i>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/dev-muhammadabid" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
+              </div>
+            </div>
+            <h3 class="project-title">VaultLock</h3>
+            <p class="project-subtitle">Secure Document Vault</p>
+            <p class="project-desc">
+              A secure document management system with <span class="highlight">AES-256 client-side encryption</span>
+              and zero-knowledge architecture — encrypted data is never exposed in plaintext.
+            </p>
+            <ul class="project-features">
+              <li>AES-256 client-side encryption</li>
+              <li>Zero-knowledge architecture</li>
+              <li>OTP validation & metadata handling</li>
+              <li>IndexedDB encrypted local storage</li>
+            </ul>
+            <div class="project-tags">
+              <span>Spring Boot</span><span>AES-256</span><span>REST API</span><span>IndexedDB</span><span>OTP</span>
+            </div>
+          </div>
 
-      </div>
-    </section>
-    <br><br><br>
+          <!-- AISHORTS -->
+          <div class="project-card glass-card reveal-up" data-tilt>
+            <div class="project-card-header">
+              <div class="project-icon">
+                <i class="fas fa-robot"></i>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/dev-muhammadabid" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
+              </div>
+            </div>
+            <h3 class="project-title">AiShorts</h3>
+            <p class="project-subtitle">Real-Time AI Chatbot</p>
+            <p class="project-desc">
+              A real-time chatbot using <span class="highlight">WebSockets</span> for low-latency communication,
+              powered by Google Gemini API with <span class="highlight">40% faster response time</span>
+              through async processing.
+            </p>
+            <ul class="project-features">
+              <li>WebSocket real-time communication</li>
+              <li>Google Gemini API integration</li>
+              <li>40% response time improvement</li>
+              <li>Structured logging & error handling</li>
+            </ul>
+            <div class="project-tags">
+              <span>WebSocket</span><span>Gemini API</span><span>Spring Boot</span><span>Async</span>
+            </div>
+          </div>
 
-    <!-- CONTACT-SECTION   -->
-    <section class="contact">
-      <h4 id="contactme">Contact Me</h4>
-      <br><br>
-      <div class="contact-container">
-        <div id="form-card">
-          <form onsubmit="sendEmail(); reset(); return false;">
-            <p>Get In Touch...</p><br><br>
-            <input type="text" id="contact_name" placeholder="Your Name" name="name" required>
-            <input type="email" id="contact_email" placeholder="Your Email" name="name" required>
-            <input type="number" id="contact_number" placeholder="Your Number" name="number" required>
-            <br><br>
-            <button id="contact_btn">Submit</button>
-          </form>
+          <!-- PACMAN AI -->
+          <div class="project-card glass-card reveal-up" data-tilt>
+            <div class="project-card-header">
+              <div class="project-icon">
+                <i class="fas fa-gamepad"></i>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/dev-muhammadabid" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
+              </div>
+            </div>
+            <h3 class="project-title">PacMan — AI Edition</h3>
+            <p class="project-subtitle">AI-Powered Game</p>
+            <p class="project-desc">
+              Classic Pacman modernized with <span class="highlight">AI-controlled enemies</span> using BFS pathfinding,
+              Monte Carlo simulations, and dynamic difficulty adjustment.
+            </p>
+            <ul class="project-features">
+              <li>BFS pathfinding for enemy AI</li>
+              <li>Monte Carlo simulations</li>
+              <li>Dynamic difficulty adjustment</li>
+              <li>Preserved original game aesthetics</li>
+            </ul>
+            <div class="project-tags">
+              <span>JavaScript</span><span>BFS</span><span>Monte Carlo</span><span>AI</span>
+            </div>
+          </div>
+
         </div>
       </div>
     </section>
-    <br><br><br><br>
+
+    <!-- ═══════════════════════════════════════════
+         EDUCATION SECTION
+    ═══════════════════════════════════════════ -->
+    <section class="edu section-padding" id="education">
+      <div class="section-inner">
+        <h2 class="section-title reveal-up">Education</h2>
+        <div class="edu-grid">
+
+          <div class="edu-card glass-card reveal-left">
+            <div class="edu-icon"><i class="fas fa-graduation-cap"></i></div>
+            <div class="edu-info">
+              <a href="Images/mcaR.png" target="_blank" rel="noopener">
+                <span class="edu-degree">Master's</span>
+                <p class="edu-program">Master of Computer Applications (MCA)</p>
+                <p class="edu-year">2023 — 2025</p>
+                <p class="edu-uni">Integral University, Lucknow</p>
+              </a>
+            </div>
+          </div>
+
+          <div class="edu-card glass-card reveal-right">
+            <div class="edu-icon"><i class="fas fa-university"></i></div>
+            <div class="edu-info">
+              <a href="#" target="_blank" rel="noopener">
+                <span class="edu-degree">Bachelor's</span>
+                <p class="edu-program">Bachelor of Computer Applications (BCA)</p>
+                <p class="edu-year">2020 — 2023</p>
+                <p class="edu-uni">Integral University, Lucknow</p>
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════
+         CERTIFICATIONS SECTION
+    ═══════════════════════════════════════════ -->
+    <section class="certifications section-padding" id="certificate">
+      <div class="section-inner">
+        <h2 class="section-title reveal-up">Certifications</h2>
+        <div class="cert-grid">
+
+          <div class="cert-card glass-card reveal-up">
+            <a href="PDFs/Meta _ Back-End Developement.pdf" target="_blank" rel="noopener">
+              <img src="https://img.icons8.com/fluency/48/meta.png" alt="Meta" loading="lazy" />
+              <h3>Meta</h3>
+              <p>Introduction to Back-End Development</p>
+            </a>
+          </div>
+
+          <div class="cert-card glass-card reveal-up">
+            <a href="PDFs/Meta _ Front-End Development.pdf" target="_blank" rel="noopener">
+              <img src="https://img.icons8.com/fluency/48/meta.png" alt="Meta" loading="lazy" />
+              <h3>Meta</h3>
+              <p>Introduction to Front-End Development</p>
+            </a>
+          </div>
+
+          <div class="cert-card glass-card reveal-up">
+            <a href="PDFs/Meta _ Introduction to Databases.pdf" target="_blank" rel="noopener">
+              <img src="https://img.icons8.com/fluency/48/meta.png" alt="Meta" loading="lazy" />
+              <h3>Meta</h3>
+              <p>Introduction to Databases</p>
+            </a>
+          </div>
+
+          <div class="cert-card glass-card reveal-up">
+            <a href="PDFs/Meta _ HTML and CSS in depth.pdf" target="_blank" rel="noopener">
+              <img src="https://img.icons8.com/fluency/48/meta.png" alt="Meta" loading="lazy" />
+              <h3>Meta</h3>
+              <p>HTML &amp; CSS in Depth</p>
+            </a>
+          </div>
+
+          <div class="cert-card glass-card reveal-up">
+            <a href="PDFs/Meta _ Programming with JavaScript.pdf" target="_blank" rel="noopener">
+              <img src="https://img.icons8.com/fluency/48/meta.png" alt="Meta" loading="lazy" />
+              <h3>Meta</h3>
+              <p>Programming with JavaScript</p>
+            </a>
+          </div>
+
+          <div class="cert-card glass-card reveal-up">
+            <a href="PDFs/Meta _ Version Control.pdf" target="_blank" rel="noopener">
+              <img src="https://img.icons8.com/fluency/48/meta.png" alt="Meta" loading="lazy" />
+              <h3>Meta</h3>
+              <p>Version Control</p>
+            </a>
+          </div>
+
+          <div class="cert-card glass-card reveal-up">
+            <a href="PDFs/Accenture _ USER EXPERIENCE.pdf" target="_blank" rel="noopener">
+              <img src="Images/Accenture-Logo.png" alt="Accenture" loading="lazy" style="height:48px;width:auto;" />
+              <h3>Accenture</h3>
+              <p>User Experience</p>
+            </a>
+          </div>
+
+          <div class="cert-card glass-card reveal-up">
+            <a href="PDFs/Infosys _ Software Engineering Agile Software Development.pdf" target="_blank" rel="noopener">
+              <img src="Images/Infosys-Logo.png" alt="Infosys" loading="lazy" style="height:48px;width:auto;" />
+              <h3>Infosys</h3>
+              <p>Software Engineering &amp; Agile Development</p>
+            </a>
+          </div>
+
+          <div class="cert-card glass-card reveal-up">
+            <a href="PDFs/Cisco _ Full Stack Development with MERN.pdf" target="_blank" rel="noopener">
+              <img src="Images/Cisco-Logo.png" alt="Cisco" loading="lazy" style="height:48px;width:auto;" />
+              <h3>Cisco</h3>
+              <p>Full Stack Development with MERN</p>
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════
+         CONTACT SECTION
+    ═══════════════════════════════════════════ -->
+    <section class="contact section-padding" id="contactme">
+      <div class="section-inner">
+        <h2 class="section-title reveal-up">Contact Me</h2>
+        <div class="contact-wrapper">
+          <div class="contact-info reveal-left">
+            <p class="contact-tagline">Let's build something great together.</p>
+            <div class="contact-links">
+              <a href="mailto:mail.muhammadabid@gmail.com" class="contact-link">
+                <i class="fas fa-envelope"></i>
+                <span>mail.muhammadabid@gmail.com</span>
+              </a>
+              <a href="https://www.linkedin.com/in/dev-abid/" target="_blank" rel="noopener" class="contact-link">
+                <i class="fab fa-linkedin"></i>
+                <span>linkedin.com/in/dev-abid</span>
+              </a>
+              <a href="https://github.com/dev-muhammadabid" target="_blank" rel="noopener" class="contact-link">
+                <i class="fab fa-github"></i>
+                <span>github.com/dev-muhammadabid</span>
+              </a>
+            </div>
+          </div>
+
+          <div class="contact-form-wrap reveal-right">
+            <form id="contactForm" onsubmit="sendEmail(); return false;" novalidate>
+              <p class="form-title">Get In Touch</p>
+              <div class="form-group">
+                <input type="text" id="contact_name" placeholder="Your Name" name="name" required autocomplete="name" />
+              </div>
+              <div class="form-group">
+                <input type="email" id="contact_email" placeholder="Your Email" name="email" required autocomplete="email" />
+              </div>
+              <div class="form-group">
+                <input type="tel" id="contact_number" placeholder="Your Phone (optional)" name="phone" autocomplete="tel" />
+              </div>
+              <div class="form-group">
+                <textarea id="contact_message" placeholder="Your Message" name="message" rows="4" required></textarea>
+              </div>
+              <button type="submit" id="contact_btn">
+                <span id="btn-text">Send Message</span>
+                <i class="fas fa-paper-plane"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
-  <!-- LAST FOOTER -->
+
+  <!-- FOOTER -->
   <footer>
     <section class="last_footer">
-      <p>© 2023 Copyright — Muhammad Abid</p>
+      <p>© 2025 Muhammad Abid — Built with passion.</p>
       <div class="social-icons">
-        <a href="https://www.linkedin.com/in/dev-abid/" target="_blank" class="icon"><i class="fab fa-linkedin"></i></a>
-        <a href="https://github.com/dev-muhammadabid" target="_blank" class="icon"><i class="fab fa-github"></i></a>
-        <a href="https://www.instagram.com/abid_zaeem/?igshid=YmMyMTA2M2Y%3D" target="_blank" class="icon"><i
-            class="fab fa-instagram"></i></a>
-        <a href="https://www.facebook.com/abid.zaeem.52/" target="_blank" class="icon"><i
-            class="fab fa-facebook"></i></a>
-        <a href="https://twitter.com/abid__zaeem" target="_blank" class="icon"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.linkedin.com/in/dev-abid/" target="_blank" rel="noopener" class="icon" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/dev-muhammadabid" target="_blank" rel="noopener" class="icon" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        <a href="https://www.instagram.com/abid_zaeem/" target="_blank" rel="noopener" class="icon" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.facebook.com/abid.zaeem.52/" target="_blank" rel="noopener" class="icon" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+        <a href="https://twitter.com/abid__zaeem" target="_blank" rel="noopener" class="icon" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
       </div>
     </section>
   </footer>
 
-  <!-- JAVASCRIPT LINK     -->
   <script src="index.js"></script>
   <script src="https://smtpjs.com/v3/smtp.js"></script>
 </body>
-
 </html>
