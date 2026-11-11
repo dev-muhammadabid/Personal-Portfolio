@@ -2,515 +2,1619 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <meta content="web_standard" name="shell-type" />
+
+  <!-- SEO Primary Meta Tags -->
+  <title>Muhammad Abid Mansoori | Full-Stack Software Developer</title>
+  <meta name="title" content="Muhammad Abid Mansoori | Full-Stack Software Developer" />
   <meta name="description"
-    content="Muhammad Abid — Backend-focused Software Developer specializing in Spring Boot, Redis, WebSocket, and scalable distributed systems. Building high-performance, real-time applications." />
+    content="Portfolio of Muhammad Abid Mansoori, Full-Stack Software Developer specializing in Java, Spring Boot, React, Next.js, scalable backend systems, and AI-powered applications." />
   <meta name="keywords"
-    content="Backend Developer, Spring Boot, Java, Redis, WebSocket, REST API, Microservices, Software Engineer, Full Stack, PostgreSQL, Docker, JWT" />
-  <meta name="author" content="Muhammad Abid" />
+    content="Muhammad Abid Mansoori, Full-Stack Developer, Backend Engineer, Java, Spring Boot, Next.js, PostgreSQL, Redis, WebSocket, Docker, AI, LLM, Cloud, Portfolio" />
+  <meta name="author" content="Muhammad Abid Mansoori" />
+  <link rel="canonical" href="https://dev-muhammadabid.github.io/Personal-Portfolio/" />
 
-  <!-- Open Graph -->
-  <meta property="og:title" content="Muhammad Abid — Software Developer" />
-  <meta property="og:description" content="Backend-focused developer building scalable, real-time systems." />
-  <meta property="og:image" content="Images/main_logo.png" />
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://dev-muhammadabid.github.io/Personal-Portfolio/" />
+  <meta property="og:title" content="Muhammad Abid Mansoori | Full-Stack Software Developer" />
+  <meta property="og:description"
+    content="Software Developer with 1+ year hands-on experience building scalable web applications across backend, frontend, real-time distributed systems, and AI." />
+  <meta property="og:image" content="Images/avatar.png" />
 
-  <!-- CSS -->
-  <link rel="stylesheet" href="style.css" />
+  <!-- Twitter / X -->
+  <meta property="twitter:card" content="summary_large_image" />
+  <meta property="twitter:url" content="https://dev-muhammadabid.github.io/Personal-Portfolio/" />
+  <meta property="twitter:title" content="Muhammad Abid Mansoori | Full-Stack Software Developer" />
+  <meta property="twitter:description"
+    content="Software Developer with 1+ year hands-on experience building scalable web applications across backend, frontend, real-time distributed systems, and AI." />
+  <meta property="twitter:image" content="Images/avatar.png" />
 
   <!-- Favicon -->
-  <link rel="icon" type="image/png" href="Images/main_logo.png" />
+  <link rel="icon" type="image/png" href="Images/avatar.png" />
 
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <!-- JSON-LD Structured Data for Person -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Muhammad Abid Mansoori",
+    "jobTitle": "Full-Stack Software Developer",
+    "url": "https://dev-muhammadabid.github.io/Personal-Portfolio/",
+    "sameAs": [
+      "https://github.com/dev-muhammadabid",
+      "https://www.linkedin.com/in/dev-abid/"
+    ],
+    "alumniOf": {
+      "@type": "CollegeOrUniversity",
+      "name": "Integral University, Lucknow"
+    },
+    "knowsAbout": ["Java", "Spring Boot", "React", "Next.js", "Redis", "PostgreSQL", "WebSocket", "Docker", "AI/ML"]
+  }
+  </script>
 
-  <!-- Title -->
-  <title>Muhammad Abid — Software Developer</title>
+  <!-- Google Fonts Preconnect & Stylesheets -->
+  <link href="https://fonts.googleapis.com" rel="preconnect" />
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700;800&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;family=Space+Grotesk:wght@500;700;800&amp;display=swap"
+    rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    rel="stylesheet" />
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "surface-container-high": "#ebe7e7",
+            "surface-paper-light": "#FFFFFF",
+            "outline": "#6c7a71",
+            "surface-container": "#f0edec",
+            "inverse-on-surface": "#f3f0ef",
+            "on-tertiary": "#ffffff",
+            "on-surface-variant": "#3c4a42",
+            "tertiary-fixed-dim": "#adc6ff",
+            "tertiary": "#005ac2",
+            "surface-container-low": "#f6f3f2",
+            "primary-fixed-dim": "#4edea3",
+            "surface-container-lowest": "#ffffff",
+            "tertiary-container": "#71a1ff",
+            "on-secondary-fixed-variant": "#574500",
+            "error": "#ba1a1a",
+            "surface": "#fcf9f8",
+            "accent-orange": "#FB923C",
+            "on-secondary-fixed": "#231b00",
+            "on-primary": "#ffffff",
+            "secondary-fixed": "#ffe083",
+            "secondary": "#735c00",
+            "on-background": "#1c1b1b",
+            "inverse-primary": "#4edea3",
+            "border-black": "#000000",
+            "on-tertiary-fixed": "#001a42",
+            "surface-paper": "#F4F4F0",
+            "on-primary-fixed": "#002113",
+            "surface-variant": "#e5e2e1",
+            "inverse-surface": "#313030",
+            "secondary-container": "#fed01b",
+            "secondary-fixed-dim": "#eec200",
+            "on-secondary": "#ffffff",
+            "on-primary-fixed-variant": "#005236",
+            "primary-container": "#10b981",
+            "on-error": "#ffffff",
+            "on-secondary-container": "#6f5900",
+            "outline-variant": "#bbcabf",
+            "tertiary-fixed": "#d8e2ff",
+            "surface-bright": "#fcf9f8",
+            "surface-container-highest": "#e5e2e1",
+            "on-surface": "#1c1b1b",
+            "error-container": "#ffdad6",
+            "ink-black": "#000000",
+            "on-error-container": "#93000a",
+            "on-primary-container": "#00422b",
+            "surface-tint": "#006c49",
+            "accent-lavender": "#C084FC",
+            "accent-cyan": "#06b6d4",
+            "on-tertiary-fixed-variant": "#004395",
+            "surface-dim": "#dcd9d9",
+            "on-tertiary-container": "#00367a",
+            "primary-fixed": "#6ffbbe",
+            "primary": "#006c49",
+            "background": "#fcf9f8"
+          },
+          borderRadius: {
+            DEFAULT: "0.125rem",
+            lg: "0.25rem",
+            xl: "0.5rem",
+            full: "0.75rem"
+          },
+          spacing: {
+            margin: "3rem",
+            "space-2xl": "4rem",
+            "space-sm": "0.5rem",
+            "margin-mobile": "1.25rem",
+            "space-xl": "2.5rem",
+            "space-xs": "0.25rem",
+            "space-md": "1rem",
+            gutter: "1.5rem",
+            "space-lg": "1.5rem",
+            "gutter-mobile": "1rem"
+          },
+          fontFamily: {
+            "body-md": ["Plus Jakarta Sans", "sans-serif"],
+            "label-code-md": ["JetBrains Mono", "monospace"],
+            "headline-sm": ["Space Grotesk", "sans-serif"],
+            "headline-md": ["Space Grotesk", "sans-serif"],
+            "label-code-sm": ["JetBrains Mono", "monospace"],
+            "label-code-lg": ["JetBrains Mono", "monospace"],
+            "display-hero": ["Space Grotesk", "sans-serif"],
+            "headline-lg": ["Space Grotesk", "sans-serif"],
+            "display-hero-mobile": ["Space Grotesk", "sans-serif"],
+            "body-sm": ["Plus Jakarta Sans", "sans-serif"],
+            "headline-lg-mobile": ["Space Grotesk", "sans-serif"],
+            "body-lg": ["Plus Jakarta Sans", "sans-serif"]
+          },
+          fontSize: {
+            "body-md": ["16px", { lineHeight: "24px", fontWeight: "400" }],
+            "label-code-md": ["13px", { lineHeight: "18px", letterSpacing: "-0.01em", fontWeight: "600" }],
+            "headline-sm": ["20px", { lineHeight: "28px", letterSpacing: "0em", fontWeight: "700" }],
+            "headline-md": ["24px", { lineHeight: "32px", letterSpacing: "-0.01em", fontWeight: "700" }],
+            "label-code-sm": ["11px", { lineHeight: "16px", letterSpacing: "0.02em", fontWeight: "700" }],
+            "label-code-lg": ["15px", { lineHeight: "20px", letterSpacing: "-0.01em", fontWeight: "600" }],
+            "display-hero": ["56px", { lineHeight: "64px", letterSpacing: "-0.04em", fontWeight: "800" }],
+            "headline-lg": ["36px", { lineHeight: "44px", letterSpacing: "-0.02em", fontWeight: "700" }],
+            "display-hero-mobile": ["38px", { lineHeight: "44px", letterSpacing: "-0.03em", fontWeight: "800" }],
+            "body-sm": ["14px", { lineHeight: "20px", fontWeight: "400" }],
+            "headline-lg-mobile": ["28px", { lineHeight: "36px", letterSpacing: "-0.02em", fontWeight: "700" }],
+            "body-lg": ["18px", { lineHeight: "28px", fontWeight: "500" }]
+          }
+        }
+      }
+    };
+  </script>
+
+  <!-- External Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
 </head>
 
-<body>
-  <!-- PRELOADER -->
-  <div id="preloader">
-    <div class="preloader-inner">
-      <div class="preloader-ring"></div>
-      <span class="preloader-text">Loading...</span>
-    </div>
-  </div>
+<body
+  class="bg-surface font-body-md text-on-surface antialiased selection:bg-secondary-container selection:text-ink-black bg-tech-grid">
 
-  <!-- CURSOR GLOW -->
-  <div class="cursor-glow" id="cursorGlow"></div>
+  <!-- ═══════════════════════════════════════════════════════════════
+       STICKY NEO-BRUTALIST HEADER (DESKTOP + RESPONSIVE MOBILE DRAWER)
+  ═══════════════════════════════════════════════════════════════ -->
+  <header
+    class="fixed top-0 left-0 right-0 z-50 bg-surface-paper-light border-b-4 border-border-black shadow-[0_4px_0_#000000]">
+    <div class="h-16 md:h-20 max-w-[1200px] mx-auto px-4 sm:px-gutter flex items-center justify-between gap-space-md">
 
-  <header>
-    <!-- NAVBAR -->
-    <nav class="navbar" id="navbar">
-      <a href="#" aria-label="Home">
-        <img src="Images/main_logo.png" id="navbar_logo" height="60px" width="60px" alt="Muhammad Abid Logo" loading="lazy" />
-      </a>
-      <ul id="navbar_list">
-        <li><a href="#aboutme">About</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#education">Education</a></li>
-        <li><a href="#certificate">Certifications</a></li>
-        <a href="#contactme"><button class="nav-btn">Hire Me</button></a>
-      </ul>
-      <div class="navbar_menu" aria-label="Toggle menu" role="button" tabindex="0">
-        <span class="hamburger-line"></span>
-        <span class="hamburger-line"></span>
-        <span class="hamburger-line"></span>
+      <!-- Brand / Identity -->
+      <div class="flex items-center gap-space-sm">
+        <div
+          class="w-9 h-9 md:w-10 md:h-10 bg-secondary-container border-2 md:border-3 border-border-black shadow-[2px_2px_0px_#000000] md:shadow-[3px_3px_0px_#000000] overflow-hidden flex items-center justify-center p-0.5">
+          <img alt="Muhammad Abid Logo Avatar" class="w-full h-full object-contain" src="Images/avatar.png"
+            onerror="this.src='Images/main_logo.png'" loading="lazy" />
+        </div>
+        <a class="flex items-center gap-space-xs font-headline-md text-headline-md tracking-tight uppercase text-ink-black hover:opacity-95 transition-opacity"
+          data-path="home" href="#">
+          <span
+            class="bg-secondary-container text-ink-black px-1.5 md:px-2 py-0.5 border-2 border-border-black shadow-[2px_2px_0px_#000000] font-headline-sm text-sm md:text-headline-sm font-extrabold">ABID.DEV</span>
+        </a>
       </div>
-    </nav>
 
-    <!-- DROPDOWN MENU -->
-    <div class="dropdown_menu" id="dropdownMenu">
-      <li><a href="#aboutme">About</a></li>
-      <li><a href="#experience">Experience</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#education">Education</a></li>
-      <li><a href="#certificate">Certifications</a></li>
-      <li><a href="#contactme"><button>Hire Me</button></a></li>
+      <!-- Navigation Bar (Desktop) -->
+      <nav class="hidden xl:flex items-center gap-1"
+        data-active-classes="bg-ink-black text-on-primary font-bold shadow-[2px_2px_0px_#000000]">
+        <a class="px-2.5 py-1.5 font-label-code-md text-label-code-md uppercase border-2 border-transparent text-on-surface-variant hover:text-ink-black hover:bg-surface-paper hover:border-border-black hover:shadow-[2px_2px_0px_#000000] transition-all"
+          data-path="about" href="#about">About</a>
+        <a class="px-2.5 py-1.5 font-label-code-md text-label-code-md uppercase border-2 border-transparent text-on-surface-variant hover:text-ink-black hover:bg-surface-paper hover:border-border-black hover:shadow-[2px_2px_0px_#000000] transition-all"
+          data-path="experience" href="#experience">Experience</a>
+        <a class="px-2.5 py-1.5 font-label-code-md text-label-code-md uppercase border-2 border-transparent text-on-surface-variant hover:text-ink-black hover:bg-surface-paper hover:border-border-black hover:shadow-[2px_2px_0px_#000000] transition-all"
+          data-path="projects" href="#projects">Projects</a>
+        <a class="px-2.5 py-1.5 font-label-code-md text-label-code-md uppercase border-2 border-transparent text-on-surface-variant hover:text-ink-black hover:bg-surface-paper hover:border-border-black hover:shadow-[2px_2px_0px_#000000] transition-all"
+          data-path="tech-stack" href="#tech-stack">Tech Stack</a>
+        <a class="px-2.5 py-1.5 font-label-code-md text-label-code-md uppercase border-2 border-transparent text-on-surface-variant hover:text-ink-black hover:bg-surface-paper hover:border-border-black hover:shadow-[2px_2px_0px_#000000] transition-all"
+          data-path="education" href="#education">Education</a>
+        <a class="px-2.5 py-1.5 font-label-code-md text-label-code-md uppercase border-2 border-transparent text-on-surface-variant hover:text-ink-black hover:bg-surface-paper hover:border-border-black hover:shadow-[2px_2px_0px_#000000] transition-all"
+          data-path="certifications" href="#certifications">Certifications</a>
+        <a class="px-2.5 py-1.5 font-label-code-md text-label-code-md uppercase border-2 border-transparent text-on-surface-variant hover:text-ink-black hover:bg-surface-paper hover:border-border-black hover:shadow-[2px_2px_0px_#000000] transition-all"
+          data-path="contact" href="#contact">Contact</a>
+      </nav>
+
+      <!-- Header Actions -->
+      <div class="flex items-center gap-2 md:gap-space-sm">
+        <!-- Hire Me CTA -->
+        <a class="tactile-btn inline-flex items-center justify-center bg-primary-container text-ink-black border-2 md:border-3 border-border-black px-3 md:px-4 py-1.5 md:py-2 font-headline-sm text-xs md:text-headline-sm tracking-tight font-extrabold uppercase shadow-[3px_3px_0px_#000000] md:shadow-[4px_4px_0px_#000000] hover:bg-emerald-400"
+          data-path="contact" href="#contact">
+          Hire Me
+        </a>
+
+        <!-- Mobile Drawer Menu Toggle Button -->
+        <button id="menu-toggle-btn"
+          class="w-8 h-8 md:w-9 md:h-9 bg-surface-paper-light flex items-center justify-center border-2 border-border-black shadow-[2px_2px_0px_#000000] xl:hidden active:translate-x-0.5 active:translate-y-0.5"
+          aria-label="Toggle Navigation Menu" aria-expanded="false" aria-controls="mobile-drawer">
+          <span class="material-symbols-outlined text-[20px] text-ink-black">menu</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Drawer (Collapsible) -->
+    <div id="mobile-drawer"
+      class="hidden bg-surface-paper border-b-4 border-border-black p-4 flex-col gap-2 font-label-code-md text-xs uppercase font-bold shadow-[0_4px_0_#000000] xl:hidden">
+      <div class="grid grid-cols-2 gap-2">
+        <a class="p-2.5 bg-surface-paper-light border-2 border-border-black text-center shadow-[2px_2px_0px_#000000] hover:bg-secondary-container"
+          href="#about">About</a>
+        <a class="p-2.5 bg-surface-paper-light border-2 border-border-black text-center shadow-[2px_2px_0px_#000000] hover:bg-secondary-container"
+          href="#experience">Experience</a>
+        <a class="p-2.5 bg-surface-paper-light border-2 border-border-black text-center shadow-[2px_2px_0px_#000000] hover:bg-secondary-container"
+          href="#projects">Projects</a>
+        <a class="p-2.5 bg-surface-paper-light border-2 border-border-black text-center shadow-[2px_2px_0px_#000000] hover:bg-secondary-container"
+          href="#tech-stack">Tech Stack</a>
+        <a class="p-2.5 bg-surface-paper-light border-2 border-border-black text-center shadow-[2px_2px_0px_#000000] hover:bg-secondary-container"
+          href="#education">Education</a>
+        <a class="p-2.5 bg-surface-paper-light border-2 border-border-black text-center shadow-[2px_2px_0px_#000000] hover:bg-secondary-container"
+          href="#certifications">Certifications</a>
+      </div>
     </div>
   </header>
 
-  <main>
-    <!-- ═══════════════════════════════════════════
-         INTRO SECTION — DO NOT CHANGE IDENTITY
-    ═══════════════════════════════════════════ -->
-    <section class="intro" id="home">
-      <div class="intro-content">
-        <p class="intro-greeting reveal-up"><span>Hey, I am</span></p>
-        <h1 class="intro-name reveal-up">Muhammad <span id="abii">Abid</span></h1>
-        <p class="intro-tagline reveal-up">I build things for the world.</p>
-        <p class="intro-desc reveal-up">
-          I'm a Software Developer specializing in building and designing
-          exceptional digital experiences. Currently focused on scalable
-          backend systems, real-time applications, and distributed architecture.
-        </p>
-        <div class="intro-cta reveal-up">
-          <a href="#projects" class="btn-primary">View My Work</a>
-          <a href="#contactme" class="btn-outline">Get In Touch</a>
-        </div>
-      </div>
-      <!-- Animated background grid -->
-      <div class="grid-bg" aria-hidden="true"></div>
-    </section>
+  <!-- ═══════════════════════════════════════════════════════════════
+       MAIN CONTENT CONTAINER
+  ═══════════════════════════════════════════════════════════════ -->
+  <main class="w-full pt-16 md:pt-20 min-h-screen">
+    <div class="flex flex-col w-full">
 
-    <!-- ═══════════════════════════════════════════
-         ABOUT SECTION
-    ═══════════════════════════════════════════ -->
-    <section class="about section-padding" id="aboutme">
-      <div class="section-inner">
-        <h2 class="section-title reveal-up">About Me</h2>
-        <div class="about-grid">
-          <div class="about-text reveal-left">
-            <p>
-              Hey! I'm <span class="highlight">Abid</span> — a backend-focused
-              <span class="highlight">Software Developer</span> who enjoys building things that live on the internet.
-            </p>
-            <br />
-            <p>
-              I specialize in designing <span class="highlight">scalable, real-time systems</span> using
-              Spring Boot, Redis, and WebSocket. I'm passionate about solving
-              <span class="highlight">latency, scalability, and reliability</span> challenges in distributed environments.
-            </p>
-            <br />
-            <p>
-              I thrive in challenging environments, constantly seeking opportunities to expand my skill set.
-              I'm always <span class="highlight">open to connecting</span> with fellow
-              <span class="highlight">developers, designers, and anyone passionate about tech.</span>
-            </p>
-            <br />
-            <p><span class="highlight">Thank you for visiting my website.</span></p>
+      <!-- ─── HERO SECTION ────────────────────────────────────────── -->
+      <section class="w-full max-w-[1200px] mx-auto px-4 sm:px-gutter py-space-xl md:py-space-2xl" id="home">
+
+        <!-- Top System Ticker / Badges -->
+        <div class="flex flex-wrap items-center gap-space-sm mb-space-lg">
+          <span
+            class="inline-flex items-center gap-1.5 px-3 py-1 bg-secondary-container text-ink-black font-label-code-md text-label-code-md font-extrabold uppercase border-2 md:border-3 border-border-black shadow-[3px_3px_0px_#000000]">
+            <span class="material-symbols-outlined text-[16px]">bolt</span> AI &amp; FULL-STACK ENGINEER
+          </span>
+          <span
+            class="inline-flex items-center gap-1.5 px-3 py-1 bg-surface-paper-light text-ink-black font-label-code-md text-label-code-md font-bold uppercase border-2 md:border-3 border-border-black shadow-[3px_3px_0px_#000000]">
+            <span class="material-symbols-outlined text-[16px]">pin_drop</span> LUCKNOW, INDIA
+          </span>
+          <span
+            class="inline-flex items-center gap-2 px-3 py-1 bg-primary-container text-ink-black font-label-code-md text-label-code-md font-extrabold uppercase border-2 md:border-3 border-border-black shadow-[3px_3px_0px_#000000]">
+            <span class="relative flex h-2.5 w-2.5">
+              <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-ink-black opacity-75"></span>
+              <span
+                class="relative inline-flex rounded-full h-2.5 w-2.5 bg-surface-paper-light border border-border-black"></span>
+            </span>
+            AVAILABLE FOR WORK
+          </span>
+        </div>
+
+        <!-- Main Hero Split Grid -->
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-center">
+
+          <!-- Left Hero Typography & CTAs -->
+          <div class="lg:col-span-7 flex flex-col gap-space-md">
+            <div class="inline-block">
+              <span
+                class="font-label-code-lg text-label-code-lg font-extrabold uppercase tracking-widest bg-ink-black text-on-primary px-3 py-1 border-2 border-border-black shadow-[2px_2px_0px_#000000]">
+                TERMINAL // 01 &gt; HELLO ABii
+              </span>
+            </div>
+
+            <h1
+              class="font-display-hero text-3xl sm:text-4xl md:text-display-hero uppercase tracking-tighter text-ink-black leading-[1.05]">
+              HEY, I AM <br />
+              <span
+                class="bg-secondary-container px-3 py-0.5 border-3 md:border-4 border-border-black shadow-[5px_5px_0px_#000000] md:shadow-[6px_6px_0px_#000000] inline-block -rotate-1 mt-1">
+                MUHAMMAD ABID
+              </span>
+            </h1>
+
+            <div
+              class="border-l-4 border-primary pl-4 py-1 bg-surface-paper-light border-y border-r border-border-black shadow-[3px_3px_0px_#000000] p-3">
+              <p class="font-headline-sm text-headline-sm font-extrabold text-ink-black">
+                Ship bugs. Fix vibes. Call it agile.
+              </p>
+              <p class="font-body-lg text-body-lg text-on-surface-variant mt-2 max-w-xl">
+                I'm an AI & Full-Stack Software Engineer passionate about building scalable systems, intelligent applications, and products that actually ship.
+              </p>
+            </div>
+
+            <!-- Tactile Neo-Brutalist CTAs -->
+            <div class="flex flex-wrap items-center gap-space-md pt-space-sm">
+              <a class="tactile-btn inline-flex items-center gap-2 px-5 md:px-6 py-3 md:py-3.5 bg-primary-container text-ink-black font-headline-sm text-sm md:text-headline-sm uppercase font-extrabold border-3 border-border-black shadow-[4px_4px_0px_#000000] md:shadow-[5px_5px_0px_#000000] hover:bg-emerald-400"
+                href="#projects">
+                <span class="material-symbols-outlined text-[20px] md:text-[22px]">code_blocks</span> View Projects
+              </a>
+              <a class="tactile-btn inline-flex items-center gap-2 px-5 md:px-6 py-3 md:py-3.5 bg-surface-paper-light text-ink-black font-headline-sm text-sm md:text-headline-sm uppercase font-extrabold border-3 border-border-black shadow-[4px_4px_0px_#000000] md:shadow-[5px_5px_0px_#000000] hover:bg-secondary-container"
+                href="#contact">
+                <span class="material-symbols-outlined text-[20px] md:text-[22px]">mail</span> Let's Connect
+              </a>
+            </div>
+
+            <!-- Fast Network Connectivity Bar -->
+            <div class="flex flex-wrap items-center gap-space-sm pt-2">
+              <span
+                class="font-label-code-sm text-label-code-sm font-bold uppercase text-on-surface-variant">NETWORK:</span>
+              <a class="inline-flex items-center gap-1 px-2.5 py-1 bg-surface-paper border-2 border-border-black shadow-[2px_2px_0px_#000000] font-label-code-sm text-xs font-bold text-ink-black hover:bg-ink-black hover:text-on-primary transition-colors"
+                href="https://github.com/dev-muhammadabid" target="_blank" rel="noopener noreferrer">
+                <span>GitHub</span> <span class="material-symbols-outlined text-[14px]">north_east</span>
+              </a>
+              <a class="inline-flex items-center gap-1 px-2.5 py-1 bg-surface-paper border-2 border-border-black shadow-[2px_2px_0px_#000000] font-label-code-sm text-xs font-bold text-ink-black hover:bg-tertiary hover:text-on-tertiary transition-colors"
+                href="https://www.linkedin.com/in/dev-abid/" target="_blank" rel="noopener noreferrer">
+                <span>LinkedIn</span> <span class="material-symbols-outlined text-[14px]">north_east</span>
+              </a>
+              <a class="inline-flex items-center gap-1 px-2.5 py-1 bg-surface-paper border-2 border-border-black shadow-[2px_2px_0px_#000000] font-label-code-sm text-xs font-bold text-ink-black hover:bg-accent-lavender hover:text-ink-black transition-colors"
+                href="mailto:mail.muhammadabid@gmail.com">
+                <span>Email</span> <span class="material-symbols-outlined text-[14px]">north_east</span>
+              </a>
+            </div>
           </div>
 
-          <!-- SKILLS -->
-          <div class="skills-panel reveal-right">
-            <p class="skills-heading">Tech Stack</p>
-
-            <div class="skill-category">
-              <span class="skill-cat-label">Backend</span>
-              <div class="skill-tags">
-                <span class="skill-tag"><a href="https://overapi.com/java" target="_blank" rel="noopener"><img src="https://img.icons8.com/ios/24/40C057/java-coffee-cup-logo--v1.png" alt="Java" loading="lazy" />Java</a></span>
-                <span class="skill-tag"><a href="https://spring.io/projects/spring-boot" target="_blank" rel="noopener"><img src="https://img.icons8.com/color/24/spring-logo.png" alt="Spring Boot" loading="lazy" />Spring Boot</a></span>
-                <span class="skill-tag"><a href="https://www.geeksforgeeks.org/rest-api-introduction/" target="_blank" rel="noopener"><img src="https://img.icons8.com/ios-filled/24/40C057/api.png" alt="REST API" loading="lazy" />REST API</a></span>
-                <span class="skill-tag"><a href="https://microservices.io/" target="_blank" rel="noopener"><img src="https://img.icons8.com/ios/24/40C057/centralized-network.png" alt="Microservices" loading="lazy" />Microservices</a></span>
-                <span class="skill-tag"><img src="https://img.icons8.com/color/24/redis.png" alt="Redis" loading="lazy" />Redis</span>
-                <span class="skill-tag"><img src="https://img.icons8.com/ios-filled/24/40C057/api-settings.png" alt="WebSocket" loading="lazy" />WebSocket</span>
-                <span class="skill-tag"><img src="https://img.icons8.com/ios-filled/24/40C057/lock.png" alt="JWT" loading="lazy" />JWT / Security</span>
-              </div>
+          <!-- Right Visual Frame & Tactile Card Display -->
+          <div class="lg:col-span-5 relative flex justify-center mt-6 lg:mt-0">
+            <!-- Asymmetric Background Block -->
+            <div
+              class="absolute -inset-3 bg-tertiary-container border-4 border-border-black shadow-[8px_8px_0px_#000000] -rotate-2">
             </div>
+            <!-- Foreground Retro Terminal Frame -->
+            <div
+              class="relative w-full max-w-[390px] bg-surface-paper-light border-4 border-border-black shadow-[7px_7px_0px_#000000] p-4 flex flex-col items-center rotate-1">
 
-            <div class="skill-category">
-              <span class="skill-cat-label">Databases</span>
-              <div class="skill-tags">
-                <span class="skill-tag"><a href="https://overapi.com/mysql" target="_blank" rel="noopener"><img src="https://img.icons8.com/color/24/mysql-logo.png" alt="MySQL" loading="lazy" />MySQL</a></span>
-                <span class="skill-tag"><img src="https://img.icons8.com/color/24/postgreesql.png" alt="PostgreSQL" loading="lazy" />PostgreSQL</span>
-                <span class="skill-tag"><a href="https://www.mongodb.com/" target="_blank" rel="noopener"><img src="https://img.icons8.com/color/24/mongodb.png" alt="MongoDB" loading="lazy" />MongoDB</a></span>
+              <!-- Terminal Header Bar -->
+              <div
+                class="w-full flex items-center justify-between pb-3 mb-3 border-b-3 border-border-black font-label-code-md text-label-code-md font-bold uppercase">
+                <span class="flex items-center gap-2">
+                  <span class="w-3.5 h-3.5 rounded-full bg-error border-2 border-border-black inline-block"></span>
+                  <span
+                    class="w-3.5 h-3.5 rounded-full bg-secondary-container border-2 border-border-black inline-block"></span>
+                  <span
+                    class="w-3.5 h-3.5 rounded-full bg-primary-container border-2 border-border-black inline-block"></span>
+                </span>
+                <span
+                  class="bg-surface-variant px-2.5 py-0.5 border border-border-black font-bold tracking-tight">ABID_CORE.EXE</span>
               </div>
-            </div>
 
-            <div class="skill-category">
-              <span class="skill-cat-label">Frontend</span>
-              <div class="skill-tags">
-                <span class="skill-tag"><a href="https://overapi.com/javascript" target="_blank" rel="noopener"><img src="https://img.icons8.com/ios-filled/24/40C057/javascript-logo.png" alt="JavaScript" loading="lazy" />JavaScript</a></span>
-                <span class="skill-tag"><a href="https://overapi.com/html" target="_blank" rel="noopener"><img src="https://img.icons8.com/ios-filled/24/40C057/html-5--v1.png" alt="HTML" loading="lazy" />HTML5</a></span>
-                <span class="skill-tag"><a href="https://overapi.com/css" target="_blank" rel="noopener"><img src="https://img.icons8.com/ios-filled/24/40C057/css3.png" alt="CSS" loading="lazy" />CSS3</a></span>
-                <span class="skill-tag"><img src="https://img.icons8.com/color/24/react-native.png" alt="ReactJS" loading="lazy" />ReactJS</span>
-                <span class="skill-tag"><img src="https://img.icons8.com/ios-filled/24/40C057/css-filetype.png" alt="Tailwind" loading="lazy" />Tailwind CSS</span>
-              </div>
-            </div>
-
-            <div class="skill-category">
-              <span class="skill-cat-label">Tools & Concepts</span>
-              <div class="skill-tags">
-                <span class="skill-tag"><a href="https://overapi.com/gift" target="_blank" rel="noopener"><img src="https://img.icons8.com/ios-filled/24/40C057/git.png" alt="Git" loading="lazy" />Git</a></span>
-                <span class="skill-tag"><a href="https://docs.github.com/en" target="_blank" rel="noopener"><img src="https://img.icons8.com/glyph-neue/24/40C057/github.png" alt="GitHub" loading="lazy" />GitHub</a></span>
-                <span class="skill-tag"><img src="https://img.icons8.com/color/24/docker.png" alt="Docker" loading="lazy" />Docker</span>
-                <span class="skill-tag"><img src="https://img.icons8.com/external-flatart-icons-solid-flatarticons/24/40C057/external-agile-web-design-and-development-flatart-icons-solid-flatarticons.png" alt="Agile" loading="lazy" />Agile</span>
-                <span class="skill-tag"><img src="https://img.icons8.com/ios-filled/24/40C057/artificial-intelligence.png" alt="AI" loading="lazy" />LLM / Gen AI</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ═══════════════════════════════════════════
-         EXPERIENCE SECTION
-    ═══════════════════════════════════════════ -->
-    <section class="experience section-padding" id="experience">
-      <div class="section-inner">
-        <h2 class="section-title reveal-up">Work Experience</h2>
-        <div class="timeline">
-
-          <div class="timeline-item reveal-left">
-            <div class="timeline-dot"></div>
-            <div class="timeline-card glass-card">
-              <div class="timeline-header">
-                <div>
-                  <h3 class="timeline-role">Freelance Software Developer</h3>
-                  <p class="timeline-company">Social Media Application</p>
+              <!-- Main Hero Avatar Image Integration -->
+              <div
+                class="w-full aspect-square bg-[#f59e0b] border-3 border-border-black overflow-hidden flex items-center justify-center p-3 relative group">
+                <img alt="Muhammad Abid Mansoori Portrait"
+                  class="w-full h-full object-contain filter drop-shadow-[5px_5px_0px_#000000] group-hover:scale-105 transition-transform duration-300"
+                  src="Images/avatar.png" onerror="this.src='Images/main_logo.png'" loading="eager" />
+                <!-- Rotated Sticker Tag Overlay -->
+                <div
+                  class="absolute bottom-3 right-3 bg-accent-lavender text-ink-black font-label-code-sm text-label-code-sm font-extrabold uppercase px-2.5 py-1 border-2 border-border-black shadow-[3px_3px_0px_#000000] rotate-3 pointer-events-none">
+                  [ BUILT TO SCALE ]
                 </div>
-                <span class="timeline-date">Jan 2026 — Present</span>
               </div>
-              <ul class="timeline-points">
-                <li>Designed and developed a scalable backend using <span class="highlight">Spring Boot, PostgreSQL, and Redis</span> for real-time location-based user discovery.</li>
-                <li>Implemented <span class="highlight">Redis GEO queries</span> enabling efficient nearby user matching within ~100m radius, improving response latency.</li>
-                <li>Integrated caching, rate limiting, and <span class="highlight">push notifications (Firebase FCM)</span> for performance and reliability.</li>
-              </ul>
-              <div class="timeline-tags">
-                <span>Spring Boot</span><span>Redis</span><span>PostgreSQL</span><span>Firebase FCM</span>
+
+              <!-- Frame Footer Tag -->
+              <div
+                class="w-full mt-3 pt-3 border-t-3 border-border-black flex justify-between items-center font-label-code-sm text-label-code-sm">
+                <span class="font-bold text-ink-black">FOCUS: BUILD + SCALE + SHIP</span>
+                <span
+                  class="bg-primary text-on-primary px-2.5 py-0.5 border border-border-black font-extrabold uppercase flex items-center gap-1.5 shadow-[1px_1px_0px_#000000]">
+                  <span class="w-2 h-2 rounded-full bg-primary-fixed-dim animate-pulse inline-block"></span> ONLINE
+                </span>
               </div>
             </div>
           </div>
+        </div>
 
-          <div class="timeline-item reveal-right">
-            <div class="timeline-dot"></div>
-            <div class="timeline-card glass-card">
-              <div class="timeline-header">
+        <!-- Brutalist Metric Ticker Cards -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-space-md mt-space-2xl">
+          <div class="bg-surface-paper-light border-3 border-border-black p-space-md shadow-[5px_5px_0px_#000000] hover:translate-x-0.5 hover:translate-y-0.5 transition-transform flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between font-label-code-sm text-label-code-sm text-on-surface-variant font-bold uppercase mb-2">
+                <span>PRODUCT ENGINEERING</span>
+                <span class="material-symbols-outlined text-[20px] text-primary">devices</span>
+              </div>
+              <h3 class="font-headline-sm text-lg font-extrabold text-ink-black mb-2 leading-snug">
+                Full-Stack &amp; Cross-Platform Product Engineering
+              </h3>
+              <p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+                Contributed to VibsZ by developing scalable frontend and backend services, with exposure to Android and iOS application development leveraging AI-assisted development tools.
+              </p>
+            </div>
+          </div>
+
+          <div class="bg-secondary-container border-3 border-border-black p-space-md shadow-[5px_5px_0px_#000000] hover:translate-x-0.5 hover:translate-y-0.5 transition-transform flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between font-label-code-sm text-label-code-sm text-ink-black font-bold uppercase mb-2">
+                <span>AI &amp; APPLIED ML</span>
+                <span class="material-symbols-outlined text-[20px] text-ink-black">psychology</span>
+              </div>
+              <h3 class="font-headline-sm text-lg font-extrabold text-ink-black mb-2 leading-snug">
+                AI-Powered Engineering &amp; Disaster Intelligence
+              </h3>
+              <p class="font-body-sm text-body-sm text-ink-black font-medium leading-relaxed">
+                Built DevSleuth, an AI-assisted code review platform, and AapdaVision AI, a real-time disaster intelligence system integrating ML-based risk forecasting and geospatial analysis.
+              </p>
+            </div>
+          </div>
+
+          <div class="bg-surface-paper-light border-3 border-border-black p-space-md shadow-[5px_5px_0px_#000000] hover:translate-x-0.5 hover:translate-y-0.5 transition-transform flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between font-label-code-sm text-label-code-sm text-on-surface-variant font-bold uppercase mb-2">
+                <span>DATABASE OPTIMIZATION</span>
+                <span class="material-symbols-outlined text-[20px] text-tertiary">speed</span>
+              </div>
+              <h3 class="font-headline-sm text-lg font-extrabold text-ink-black mb-2 leading-snug">
+                80% API Performance Improvement
+              </h3>
+              <p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+                Optimized SQL queries and database performance at Prabhavati Digital Services, reducing API response time by approximately 80%.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ─── SECTION DIVIDER BANNER ───────────────────────────────── -->
+      <div class="w-full border-y-4 border-border-black bg-ink-black py-2 overflow-hidden shadow-[0_4px_0_#000000]">
+        <div
+          class="flex justify-between items-center text-on-primary font-label-code-sm text-label-code-sm uppercase tracking-widest font-extrabold px-4 sm:px-gutter whitespace-nowrap gap-4">
+          <span>// 02: ABOUT &amp; ARCHITECTURAL STACK</span>
+          <span class="hidden sm:inline">HIGH CONCURRENCY // DISTRIBUTED LEDGER // REAL-TIME WEB // AGENTIC AI</span>
+          <span class="flex items-center gap-1.5"><span
+              class="w-2.5 h-2.5 rounded-full bg-primary-container inline-block"></span> SYSTEM: ACTIVE</span>
+        </div>
+      </div>
+
+      <!-- ─── ABOUT ME & TECH STACK SECTION ────────────────────────── -->
+      <section class="w-full max-w-[1200px] mx-auto px-4 sm:px-gutter py-space-2xl" id="about">
+        <div class="flex items-center gap-space-sm mb-space-xl">
+          <span
+            class="w-9 h-9 bg-secondary-container border-3 border-border-black flex items-center justify-center font-headline-sm text-headline-sm font-extrabold shadow-[3px_3px_0px_#000000]">01</span>
+          <h2 class="font-headline-lg text-headline-lg uppercase font-extrabold text-ink-black tracking-tight">
+            About Me
+          </h2>
+          <div class="h-1 flex-1 bg-border-black ml-space-sm"></div>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl">
+
+          <!-- Verbatim Bio Box -->
+          <div class="lg:col-span-5 flex flex-col gap-space-md">
+            <div
+              class="bg-surface-paper-light border-4 border-border-black p-space-lg shadow-[6px_6px_0px_#000000] relative">
+              <div
+                class="absolute -top-3.5 right-4 bg-primary-container text-ink-black font-label-code-sm text-label-code-sm uppercase font-extrabold px-3 py-0.5 border-2 border-border-black shadow-[2px_2px_0px_#000000]">
+                IDENTITY PROBE
+              </div>
+              <p class="font-body-lg text-body-lg text-ink-black font-bold leading-relaxed">
+                Hey! I'm <span class="bg-secondary-container px-1">Muhammad Abid </span> — an AI & Full-Stack Software
+                Engineer with 1+ year of hands-on experience building scalable systems, intelligent applications, and products that actually ship.
+              </p>
+              <div class="h-0.5 w-full bg-border-black my-4"></div>
+              <p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+                Engineering scalable backends, seamless interfaces, real-time systems, and AI-powered applications with modern technologies.
+              </p>
+              <p class="font-body-md text-body-md text-on-surface-variant leading-relaxed mt-3">
+                Leveraging AI/ML, LLMs, Generative AI, and Agentic AI to engineer intelligent, secure, and production-ready software.
+              </p>
+              <div
+                class="mt-space-md pt-space-sm border-t-2 border-border-black flex items-center justify-between font-label-code-sm text-label-code-sm font-bold text-ink-black">
+                <span>THANK YOU FOR VISITING</span>
+                <span class="material-symbols-outlined text-[18px]">verified</span>
+              </div>
+            </div>
+
+            <!-- Terminal Status Snippet -->
+            <div
+              class="bg-ink-black text-on-primary border-4 border-border-black p-space-md font-label-code-sm text-label-code-sm shadow-[5px_5px_0px_#000000]">
+              <div class="flex items-center justify-between text-secondary-container pb-1 border-b border-outline mb-2">
+                <span>SYS_INFO: muhammad_abid.sh</span>
+                <span>UTF-8</span>
+              </div>
+              <p class="text-primary-fixed leading-5 font-mono">
+                &gt; const mode = ["Build", "Scale", "Deploy", "Debug"]<br />
+                &gt; const speciality = ["Full-Stack", "Android", "AI/ML", "Systems"]<br />
+                &gt; const bugs = "Unexpected Features"<br />
+                &gt; const status =  "Shipping Anyway"<br />
+                &gt; echo $READY<br />
+                <span class="text-secondary-container font-extrabold">OK // STATUS_200</span>
+              </p>
+            </div>
+          </div>
+
+          <!-- Categorized Tech Stack Badges -->
+          <div class="lg:col-span-7 flex flex-col gap-space-md" id="tech-stack">
+            <div class="border-4 border-border-black bg-surface-paper-light p-5 shadow-[6px_6px_0px_#000000]">
+              <h3
+                class="font-headline-md text-headline-md uppercase font-extrabold text-ink-black flex items-center justify-between pb-3 border-b-3 border-border-black mb-4">
+                <span>Technical Skills Inventory</span>
+                <span
+                  class="font-label-code-sm text-label-code-sm bg-secondary-container px-2.5 py-0.5 border-2 border-border-black shadow-[2px_2px_0px_#000000]">SYS_V2.0</span>
+              </h3>
+
+              <div class="flex flex-col gap-space-md">
+
+                <!-- 1. Programming Languages -->
                 <div>
-                  <h3 class="timeline-role">Software Engineer Trainee</h3>
-                  <p class="timeline-company">Prabhavati Digital Services</p>
+                  <div class="flex items-center gap-2 mb-2">
+                    <span class="w-3.5 h-3.5 bg-ink-black border-2 border-border-black inline-block"></span>
+                    <span
+                      class="font-label-code-md text-label-code-md font-extrabold uppercase text-ink-black">Programming
+                      Languages</span>
+                  </div>
+                  <div class="flex flex-wrap gap-2">
+                    <span
+                      class="tag-chip px-3 py-1.5 bg-primary-container border-2 border-border-black font-label-code-md text-label-code-md font-extrabold text-ink-black shadow-[2px_2px_0px_#000000]">Java</span>
+                    <span
+                      class="tag-chip px-3 py-1.5 bg-secondary-container border-2 border-border-black font-label-code-md text-label-code-md font-extrabold text-ink-black shadow-[2px_2px_0px_#000000]">Python</span>
+                    <span
+                      class="tag-chip px-3 py-1.5 bg-surface-paper border-2 border-border-black font-label-code-md text-label-code-md font-bold text-ink-black shadow-[2px_2px_0px_#000000]">JavaScript</span>
+                    <span
+                      class="tag-chip px-3 py-1.5 bg-tertiary-fixed border-2 border-border-black font-label-code-md text-label-code-md font-bold text-ink-black shadow-[2px_2px_0px_#000000]">TypeScript</span>
+                    <span
+                      class="tag-chip px-3 py-1.5 bg-surface-paper border-2 border-border-black font-label-code-md text-label-code-md font-bold text-ink-black shadow-[2px_2px_0px_#000000]">SQL</span>
+                  </div>
                 </div>
-                <span class="timeline-date">May 2025 — Dec 2025</span>
+
+                <!-- 2. Backend Development -->
+                <div class="pt-3 border-t-2 border-border-black">
+                  <div class="flex items-center gap-2 mb-2">
+                    <span class="w-3.5 h-3.5 bg-primary-container border-2 border-border-black inline-block"></span>
+                    <span class="font-label-code-md text-label-code-md font-extrabold uppercase text-ink-black">Backend
+                      Development</span>
+                  </div>
+                  <div class="flex flex-wrap gap-2">
+                    <span
+                      class="tag-chip px-3 py-1.5 bg-primary-container border-2 border-border-black font-label-code-md text-label-code-md font-extrabold text-ink-black shadow-[2px_2px_0px_#000000]">Spring
+                      Boot</span>
+                    <span
+                      class="tag-chip px-3 py-1.5 bg-surface-paper border-2 border-border-black font-label-code-md text-label-code-md font-bold text-ink-black shadow-[2px_2px_0px_#000000]">Spring
+                      Security</span>
+                    <span
+                      class="tag-chip px-3 py-1.5 bg-surface-paper border-2 border-border-black font-label-code-md text-label-code-md font-bold text-ink-black shadow-[2px_2px_0px_#000000]">Spring
+                      Data JPA</span>
+                    <span
+                      class="tag-chip px-3 py-1.5 bg-surface-paper border-2 border-border-black font-label-code-md text-label-code-md font-bold text-ink-black shadow-[2px_2px_0px_#000000]">Hibernate</span>
+                    <span
+                      class="tag-chip px-3 py-1.5 bg-surface-paper border-2 border-border-black font-label-code-md text-label-code-md font-bold text-ink-black shadow-[2px_2px_0px_#000000]">REST
+                      APIs</span>
+                    <span
+                      class="tag-chip px-3 py-1.5 bg-accent-lavender border-2 border-border-black font-label-code-md text-label-code-md font-bold text-ink-black shadow-[2px_2px_0px_#000000]">WebSocket
+                      / STOMP</span>
+                    <span
+                      class="tag-chip px-3 py-1.5 bg-cyan-200 border-2 border-border-black font-label-code-md text-label-code-md font-bold text-ink-black shadow-[2px_2px_0px_#000000]">Server-Sent
+                      Events (SSE)</span>
+                    <span
+                      class="tag-chip px-3 py-1.5 bg-secondary-container border-2 border-border-black font-label-code-md text-label-code-md font-extrabold text-ink-black shadow-[2px_2px_0px_#000000]">JWT</span>
+                    <span
+                      class="tag-chip px-3 py-1.5 bg-surface-paper border-2 border-border-black font-label-code-md text-label-code-md font-bold text-ink-black shadow-[2px_2px_0px_#000000]">FastAPI</span>
+                    <span
+                      class="tag-chip px-3 py-1.5 bg-surface-paper border-2 border-border-black font-label-code-md text-label-code-md font-bold text-ink-black shadow-[2px_2px_0px_#000000]">Maven</span>
+                  </div>
+                </div>
+
+                <!-- 3. Frontend Development -->
+                <div class="pt-3 border-t-2 border-border-black">
+                  <div class="flex items-center gap-2 mb-2">
+                    <span class="w-3.5 h-3.5 bg-accent-orange border-2 border-border-black inline-block"></span>
+                    <span class="font-label-code-md text-label-code-md font-extrabold uppercase text-ink-black">Frontend
+                      Development</span>
+                  </div>
+                  <div class="flex flex-wrap gap-2">
+                    <span
+                      class="tag-chip px-3 py-1.5 bg-secondary-container border-2 border-border-black font-label-code-md text-label-code-md font-bold text-ink-black shadow-[2px_2px_0px_#000000]">React</span>
+                    <span
+                      class="tag-chip px-3 py-1.5 bg-tertiary-container border-2 border-border-black font-label-code-md text-label-code-md font-extrabold text-ink-black shadow-[2px_2px_0px_#000000]">Next.js</span>
+                    <span
+                      class="tag-chip px-3 py-1.5 bg-primary-fixed border-2 border-border-black font-label-code-md text-label-code-md font-bold text-ink-black shadow-[2px_2px_0px_#000000]">Tailwind
+                      CSS</span>
+                    <span
+                      class="tag-chip px-3 py-1.5 bg-surface-paper border-2 border-border-black font-label-code-md text-label-code-md font-bold text-ink-black shadow-[2px_2px_0px_#000000]">HTML5</span>
+                    <span
+                      class="tag-chip px-3 py-1.5 bg-surface-paper border-2 border-border-black font-label-code-md text-label-code-md font-bold text-ink-black shadow-[2px_2px_0px_#000000]">CSS3</span>
+                    <span
+                      class="tag-chip px-3 py-1.5 bg-accent-lavender border-2 border-border-black font-label-code-md text-label-code-md font-bold text-ink-black shadow-[2px_2px_0px_#000000]">MapLibre
+                      GL</span>
+                  </div>
+                </div>
+
+                <!-- 4. Databases -->
+                <div class="pt-3 border-t-2 border-border-black">
+                  <div class="flex items-center gap-2 mb-2">
+                    <span class="w-3.5 h-3.5 bg-secondary-container border-2 border-border-black inline-block"></span>
+                    <span
+                      class="font-label-code-md text-label-code-md font-extrabold uppercase text-ink-black">Databases</span>
+                  </div>
+                  <div class="flex flex-wrap gap-2">
+                    <span
+                      class="tag-chip px-3 py-1.5 bg-tertiary-container border-2 border-border-black font-label-code-md text-label-code-md font-extrabold text-ink-black shadow-[2px_2px_0px_#000000]">PostgreSQL</span>
+                    <span
+                      class="tag-chip px-3 py-1.5 bg-primary-container border-2 border-border-black font-label-code-md text-label-code-md font-bold text-ink-black shadow-[2px_2px_0px_#000000]">PostGIS</span>
+                    <span
+                      class="tag-chip px-3 py-1.5 bg-surface-paper border-2 border-border-black font-label-code-md text-label-code-md font-bold text-ink-black shadow-[2px_2px_0px_#000000]">MySQL</span>
+                    <span
+                      class="tag-chip px-3 py-1.5 bg-secondary-container border-2 border-border-black font-label-code-md text-label-code-md font-extrabold text-ink-black shadow-[2px_2px_0px_#000000]">Redis</span>
+                  </div>
+                </div>
+
+                <!-- 5. Tools & DevOps -->
+                <div class="pt-3 border-t-2 border-border-black">
+                  <div class="flex items-center gap-2 mb-2">
+                    <span class="w-3.5 h-3.5 bg-accent-lavender border-2 border-border-black inline-block"></span>
+                    <span class="font-label-code-md text-label-code-md font-extrabold uppercase text-ink-black">Tools
+                      &amp; DevOps</span>
+                  </div>
+                  <div class="flex flex-wrap gap-2">
+                    <span
+                      class="tag-chip px-3 py-1.5 bg-surface-paper border-2 border-border-black font-label-code-md text-label-code-md font-bold text-ink-black shadow-[2px_2px_0px_#000000]">Git</span>
+                    <span
+                      class="tag-chip px-3 py-1.5 bg-surface-paper border-2 border-border-black font-label-code-md text-label-code-md font-bold text-ink-black shadow-[2px_2px_0px_#000000]">GitHub</span>
+                    <span
+                      class="tag-chip px-3 py-1.5 bg-surface-paper border-2 border-border-black font-label-code-md text-label-code-md font-bold text-ink-black shadow-[2px_2px_0px_#000000]">GitHub
+                      Actions</span>
+                    <span
+                      class="tag-chip px-3 py-1.5 bg-tertiary-container border-2 border-border-black font-label-code-md text-label-code-md font-extrabold text-ink-black shadow-[2px_2px_0px_#000000]">Docker</span>
+                    <span
+                      class="tag-chip px-3 py-1.5 bg-surface-paper border-2 border-border-black font-label-code-md text-label-code-md font-bold text-ink-black shadow-[2px_2px_0px_#000000]">Jest
+                      / Mocha / Jasmine</span>
+                    <span
+                      class="tag-chip px-3 py-1.5 bg-surface-paper border-2 border-border-black font-label-code-md text-label-code-md font-bold text-ink-black shadow-[2px_2px_0px_#000000]">Postman</span>
+                    <span
+                      class="tag-chip px-3 py-1.5 bg-surface-paper border-2 border-border-black font-label-code-md text-label-code-md font-bold text-ink-black shadow-[2px_2px_0px_#000000]">Flyway</span>
+                    <span
+                      class="tag-chip px-3 py-1.5 bg-surface-paper border-2 border-border-black font-label-code-md text-label-code-md font-bold text-ink-black shadow-[2px_2px_0px_#000000]">Kafka</span>
+                    <span
+                      class="tag-chip px-3 py-1.5 bg-surface-paper border-2 border-border-black font-label-code-md text-label-code-md font-bold text-ink-black shadow-[2px_2px_0px_#000000]">Kubernetes</span>
+                    <span
+                      class="tag-chip px-3 py-1.5 bg-surface-paper border-2 border-border-black font-label-code-md text-label-code-md font-bold text-ink-black shadow-[2px_2px_0px_#000000]">AWS
+                      EC2</span>
+                  </div>
+                </div>
+
+                <!-- 6. AI & Core Concepts -->
+                <div class="pt-3 border-t-2 border-border-black">
+                  <div class="flex items-center gap-2 mb-2">
+                    <span class="w-3.5 h-3.5 bg-emerald-400 border-2 border-border-black inline-block"></span>
+                    <span class="font-label-code-md text-label-code-md font-extrabold uppercase text-ink-black">AI &amp;
+                      Core Architecture</span>
+                  </div>
+                  <div class="flex flex-wrap gap-2">
+                    <span
+                      class="tag-chip px-3 py-1.5 bg-secondary-container border-2 border-border-black font-label-code-md text-label-code-md font-extrabold text-ink-black shadow-[2px_2px_0px_#000000]">LLMs
+                      &amp; GenAI</span>
+                    <span
+                      class="tag-chip px-3 py-1.5 bg-primary-container border-2 border-border-black font-label-code-md text-label-code-md font-extrabold text-ink-black shadow-[2px_2px_0px_#000000]">Agentic
+                      AI</span>
+                    <span
+                      class="tag-chip px-3 py-1.5 bg-surface-paper border-2 border-border-black font-label-code-md text-label-code-md font-bold text-ink-black shadow-[2px_2px_0px_#000000]">Microservices</span>
+                    <span
+                      class="tag-chip px-3 py-1.5 bg-surface-paper border-2 border-border-black font-label-code-md text-label-code-md font-bold text-ink-black shadow-[2px_2px_0px_#000000]">Distributed
+                      Systems</span>
+                    <span
+                      class="tag-chip px-3 py-1.5 bg-surface-paper border-2 border-border-black font-label-code-md text-label-code-md font-bold text-ink-black shadow-[2px_2px_0px_#000000]">OOP
+                      &amp; DSA</span>
+                    <span
+                      class="tag-chip px-3 py-1.5 bg-surface-paper border-2 border-border-black font-label-code-md text-label-code-md font-bold text-ink-black shadow-[2px_2px_0px_#000000]">API
+                      Design</span>
+                  </div>
+                </div>
+
               </div>
-              <ul class="timeline-points">
-                <li>Developed backend services using <span class="highlight">Spring Boot</span> and designed RESTful APIs.</li>
-                <li>Improved API performance by approximately <span class="highlight">60%</span> through query optimization.</li>
-                <li>Implemented <span class="highlight">JWT-based authentication</span> and role-based authorization.</li>
-                <li>Containerized applications using <span class="highlight">Docker</span> for consistent deployments.</li>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ─── WORK EXPERIENCE SECTION ──────────────────────────────── -->
+      <section class="w-full bg-surface-paper border-y-4 border-border-black py-space-2xl" id="experience">
+        <div class="max-w-[1200px] mx-auto px-4 sm:px-gutter">
+          <div class="flex items-center gap-space-sm mb-space-xl">
+            <span
+              class="w-9 h-9 bg-primary-container border-3 border-border-black flex items-center justify-center font-headline-sm text-headline-sm font-extrabold shadow-[3px_3px_0px_#000000]">02</span>
+            <h2 class="font-headline-lg text-headline-lg uppercase font-extrabold text-ink-black tracking-tight">
+              Work Experience
+            </h2>
+            <div class="h-1 flex-1 bg-border-black ml-space-sm"></div>
+          </div>
+
+          <div class="flex flex-col gap-space-lg">
+
+            <!-- Experience Card 1: VibsZ Social Private Limited -->
+            <div
+              class="bg-surface-paper-light border-4 border-border-black p-4 sm:p-space-lg shadow-[6px_6px_0px_#000000] hover:-translate-y-1 transition-transform duration-200 relative">
+              <div
+                class="flex flex-wrap items-center justify-between gap-space-sm pb-space-sm border-b-3 border-border-black mb-space-md">
+                <div>
+                  <span
+                    class="inline-block bg-primary-container text-ink-black font-label-code-sm text-label-code-sm font-extrabold uppercase px-2.5 py-0.5 border-2 border-border-black mb-1 shadow-[2px_2px_0px_#000000]">
+                    PRODUCTION SCALE
+                  </span>
+                  <h3 class="font-headline-md text-headline-md font-extrabold text-ink-black uppercase">
+                    Software Developer &mdash; VibsZ Social Private Limited
+                  </h3>
+                  <p class="font-body-md text-body-md text-primary font-bold">
+                    Hyperlocal Social Discovery Platform
+                  </p>
+                </div>
+                <div class="text-right">
+                  <span
+                    class="inline-flex items-center gap-1.5 font-label-code-md text-label-code-md font-extrabold text-ink-black bg-surface-paper border-2 border-border-black px-3 py-1 shadow-[3px_3px_0px_#000000]">
+                    <span class="material-symbols-outlined text-[16px]">calendar_month</span> Jan 2026 &ndash; Oct 2026
+                  </span>
+                </div>
+              </div>
+
+              <ul class="flex flex-col gap-2.5 font-body-md text-body-md text-on-surface mb-space-md">
+                <li class="flex items-start gap-2.5">
+                  <span class="text-primary font-bold text-headline-sm leading-none mt-0.5">▪</span>
+                  <span>Designed and developed scalable backend services for a location-based social discovery platform
+                    using Java and Spring Boot.</span>
+                </li>
+                <li class="flex items-start gap-2.5">
+                  <span class="text-primary font-bold text-headline-sm leading-none mt-0.5">▪</span>
+                  <span>Implemented real-time messaging using WebSocket and STOMP for low-latency user
+                    communication.</span>
+                </li>
+                <li class="flex items-start gap-2.5">
+                  <span class="text-primary font-bold text-headline-sm leading-none mt-0.5">▪</span>
+                  <span>Integrated Redis GEO indexing to enable proximity-based user discovery and Redis
+                    caching to improve data retrieval efficiency.</span>
+                </li>
+                <li class="flex items-start gap-2.5">
+                  <span class="text-primary font-bold text-headline-sm leading-none mt-0.5">▪</span>
+                  <span>Implemented secure authentication workflows using JWT and OTP verification, API rate limiting,
+                    and Firebase Cloud Messaging (FCM) for push notifications.</span>
+                </li>
+                <li class="flex items-start gap-2.5">
+                  <span class="text-primary font-bold text-headline-sm leading-none mt-0.5">▪</span>
+                  <span>Developed modular REST APIs following clean architecture principles, collaborating across
+                    frontend and backend teams to deliver production-ready features.</span>
+                </li>
               </ul>
-              <div class="timeline-tags">
-                <span>Spring Boot</span><span>JWT</span><span>Docker</span><span>REST API</span>
+
+              <div class="pt-space-sm border-t-2 border-border-black flex flex-wrap items-center gap-2">
+                <span
+                  class="font-label-code-sm text-label-code-sm font-extrabold uppercase text-on-surface-variant mr-2">TECH
+                  DEPLOYED:</span>
+                <span
+                  class="px-2.5 py-1 bg-surface-paper border-2 border-border-black font-label-code-sm text-label-code-sm font-bold text-ink-black shadow-[2px_2px_0px_#000000]">Java</span>
+                <span
+                  class="px-2.5 py-1 bg-primary-container border-2 border-border-black font-label-code-sm text-label-code-sm font-bold text-ink-black shadow-[2px_2px_0px_#000000]">Spring
+                  Boot</span>
+                <span
+                  class="px-2.5 py-1 bg-secondary-container border-2 border-border-black font-label-code-sm text-label-code-sm font-bold text-ink-black shadow-[2px_2px_0px_#000000]">Redis
+                  GEO</span>
+                <span
+                  class="px-2.5 py-1 bg-surface-paper border-2 border-border-black font-label-code-sm text-label-code-sm font-bold text-ink-black shadow-[2px_2px_0px_#000000]">PostgreSQL</span>
+                <span
+                  class="px-2.5 py-1 bg-accent-lavender border-2 border-border-black font-label-code-sm text-label-code-sm font-bold text-ink-black shadow-[2px_2px_0px_#000000]">WebSocket</span>
+                <span
+                  class="px-2.5 py-1 bg-accent-orange text-ink-black border-2 border-border-black font-label-code-sm text-label-code-sm font-extrabold shadow-[2px_2px_0px_#000000]">Firebase
+                  FCM</span>
+                <span
+                  class="px-2.5 py-1 bg-tertiary-fixed border-2 border-border-black font-label-code-sm text-label-code-sm font-bold text-ink-black shadow-[2px_2px_0px_#000000]">AWS
+                  EC2</span>
               </div>
+            </div>
+
+            <!-- Experience Card 2: Prabhavati Digital Services -->
+            <div
+              class="bg-surface-paper-light border-4 border-border-black p-4 sm:p-space-lg shadow-[6px_6px_0px_#000000] hover:-translate-y-1 transition-transform duration-200 relative">
+              <div
+                class="flex flex-wrap items-center justify-between gap-space-sm pb-space-sm border-b-3 border-border-black mb-space-md">
+                <div>
+                  <span
+                    class="inline-block bg-tertiary-fixed text-ink-black font-label-code-sm text-label-code-sm font-extrabold uppercase px-2.5 py-0.5 border-2 border-border-black mb-1 shadow-[2px_2px_0px_#000000]">
+                    ENGINEERING TENURE
+                  </span>
+                  <h3 class="font-headline-md text-headline-md font-extrabold text-ink-black uppercase">
+                    Software Engineer Trainee &mdash; Prabhavati Digital Services
+                  </h3>
+                  <p class="font-body-md text-body-md text-tertiary font-bold">
+                    Enterprise Backend Services &amp; APIs
+                  </p>
+                </div>
+                <div class="text-right">
+                  <span
+                    class="inline-flex items-center gap-1.5 font-label-code-md text-label-code-md font-extrabold text-ink-black bg-surface-paper border-2 border-border-black px-3 py-1 shadow-[3px_3px_0px_#000000]">
+                    <span class="material-symbols-outlined text-[16px]">calendar_month</span> May 2025 &ndash; Dec 2025
+                  </span>
+                </div>
+              </div>
+
+              <ul class="flex flex-col gap-2.5 font-body-md text-body-md text-on-surface mb-space-md">
+                <li class="flex items-start gap-2.5">
+                  <span class="text-tertiary font-bold text-headline-sm leading-none mt-0.5">▪</span>
+                  <span>Developed RESTful APIs using Java and Spring Boot for core application functionality.</span>
+                </li>
+                <li class="flex items-start gap-2.5">
+                  <span class="text-tertiary font-bold text-headline-sm leading-none mt-0.5">▪</span>
+                  <span>Improved API response time by approximately 80% through SQL query optimization and database
+                    performance improvements.</span>
+                </li>
+                <li class="flex items-start gap-2.5">
+                  <span class="text-tertiary font-bold text-headline-sm leading-none mt-0.5">▪</span>
+                  <span>Implemented JWT authentication and Role-Based Access Control (RBAC) to secure application
+                    endpoints.</span>
+                </li>
+                <li class="flex items-start gap-2.5">
+                  <span class="text-tertiary font-bold text-headline-sm leading-none mt-0.5">▪</span>
+                  <span>Designed relational database schemas and optimized SQL queries for performance and
+                    scalability.</span>
+                </li>
+                <li class="flex items-start gap-2.5">
+                  <span class="text-tertiary font-bold text-headline-sm leading-none mt-0.5">▪</span>
+                  <span>Containerized applications using Docker to ensure consistent deployment across
+                    environments.</span>
+                </li>
+                <li class="flex items-start gap-2.5">
+                  <span class="text-tertiary font-bold text-headline-sm leading-none mt-0.5">▪</span>
+                  <span>Participated in Agile development, peer code reviews, and collaborative engineering
+                    practices.</span>
+                </li>
+              </ul>
+
+              <div class="pt-space-sm border-t-2 border-border-black flex flex-wrap items-center gap-2">
+                <span
+                  class="font-label-code-sm text-label-code-sm font-extrabold uppercase text-on-surface-variant mr-2">TECH
+                  DEPLOYED:</span>
+                <span
+                  class="px-2.5 py-1 bg-surface-paper border-2 border-border-black font-label-code-sm text-label-code-sm font-bold text-ink-black shadow-[2px_2px_0px_#000000]">Java</span>
+                <span
+                  class="px-2.5 py-1 bg-surface-paper border-2 border-border-black font-label-code-sm text-label-code-sm font-bold text-ink-black shadow-[2px_2px_0px_#000000]">Spring
+                  Boot</span>
+                <span
+                  class="px-2.5 py-1 bg-secondary-container border-2 border-border-black font-label-code-sm text-label-code-sm font-bold text-ink-black shadow-[2px_2px_0px_#000000]">MySQL</span>
+                <span
+                  class="px-2.5 py-1 bg-tertiary-container border-2 border-border-black font-label-code-sm text-label-code-sm font-bold text-ink-black shadow-[2px_2px_0px_#000000]">Docker</span>
+                <span
+                  class="px-2.5 py-1 bg-surface-paper border-2 border-border-black font-label-code-sm text-label-code-sm font-bold text-ink-black shadow-[2px_2px_0px_#000000]">JWT
+                  / RBAC</span>
+                <span
+                  class="px-2.5 py-1 bg-surface-paper border-2 border-border-black font-label-code-sm text-label-code-sm font-bold text-ink-black shadow-[2px_2px_0px_#000000]">REST
+                  API</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- ─── FEATURED PROJECTS SECTION ────────────────────────────── -->
+      <section class="w-full max-w-[1200px] mx-auto px-4 sm:px-gutter py-space-2xl" id="projects">
+        <div class="flex items-center gap-space-sm mb-space-xl">
+          <span
+            class="w-9 h-9 bg-accent-orange border-3 border-border-black flex items-center justify-center font-headline-sm text-headline-sm font-extrabold shadow-[3px_3px_0px_#000000]">03</span>
+          <h2 class="font-headline-lg text-headline-lg uppercase font-extrabold text-ink-black tracking-tight">
+            Featured Projects
+          </h2>
+          <div class="h-1 flex-1 bg-border-black ml-space-sm"></div>
+        </div>
+
+        <!-- 5-Project Bento Neo-Brutalist Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter items-stretch">
+
+          <!-- Project 1: DevSleuth (Emerald Glow) -->
+          <div
+            class="project-card project-devsleuth bg-surface-paper-light border-4 border-border-black shadow-[6px_6px_0px_#000000] flex flex-col justify-between group">
+            <div class="p-space-md">
+              <div class="flex items-start justify-between gap-2 pb-space-sm border-b-3 border-border-black">
+                <div>
+                  <span
+                    class="font-label-code-sm text-label-code-sm uppercase font-extrabold bg-primary-container text-ink-black px-2 py-0.5 border border-border-black inline-block mb-1 shadow-[1px_1px_0px_#000000]">
+                    AI CODE REVIEW // HYBRID STATIC + LLM
+                  </span>
+                  <h3 class="font-headline-md text-headline-md font-extrabold text-ink-black uppercase tracking-tight">
+                    DevSleuth
+                  </h3>
+                  <p class="font-label-code-md text-label-code-md text-on-surface-variant font-bold">
+                    AI-Assisted Hybrid Code Review Platform
+                  </p>
+                </div>
+                <a class="tactile-btn p-2 bg-secondary-container border-2 border-border-black shadow-[3px_3px_0px_#000000] group-hover:bg-primary-container group-hover:rotate-6 transition-all"
+                  href="https://github.com/dev-muhammadabid/DevSleuth" target="_blank" rel="noopener noreferrer"
+                  title="View DevSleuth on GitHub">
+                  <span class="material-symbols-outlined text-[20px] block text-ink-black">open_in_new</span>
+                </a>
+              </div>
+              <p class="font-body-sm text-body-sm text-ink-black font-medium my-space-md leading-relaxed">
+                An AI-assisted hybrid code review platform that combines static analysis tools with contextual LLM-based
+                analysis for GitHub Pull Requests.
+              </p>
+              <ul class="flex flex-col gap-1.5 font-body-sm text-body-sm text-on-surface-variant">
+                <li class="flex items-center gap-2">
+                  <span class="text-ink-black font-extrabold">▪</span>
+                  <span>GitHub integration &amp; review orchestration</span>
+                </li>
+                <li class="flex items-center gap-2">
+                  <span class="text-ink-black font-extrabold">▪</span>
+                  <span>Static analysis (Semgrep, SpotBugs, Checkstyle)</span>
+                </li>
+                <li class="flex items-center gap-2">
+                  <span class="text-ink-black font-extrabold">▪</span>
+                  <span>Finding deduplication &amp; confidence scoring</span>
+                </li>
+                <li class="flex items-center gap-2">
+                  <span class="text-ink-black font-extrabold">▪</span>
+                  <span>Modular backend architecture with Flyway</span>
+                </li>
+              </ul>
+            </div>
+            <div class="p-space-md bg-surface-paper border-t-3 border-border-black flex flex-wrap gap-1.5">
+              <span
+                class="px-2 py-0.5 bg-primary-container border border-border-black font-label-code-sm text-label-code-sm font-extrabold text-ink-black shadow-[1px_1px_0px_#000000]">Spring
+                Boot</span>
+              <span
+                class="px-2 py-0.5 bg-surface-paper-light border border-border-black font-label-code-sm text-label-code-sm font-bold text-ink-black shadow-[1px_1px_0px_#000000]">Next.js</span>
+              <span
+                class="px-2 py-0.5 bg-surface-paper-light border border-border-black font-label-code-sm text-label-code-sm font-bold text-ink-black shadow-[1px_1px_0px_#000000]">PostgreSQL</span>
+              <span
+                class="px-2 py-0.5 bg-secondary-container border border-border-black font-label-code-sm text-label-code-sm font-extrabold text-ink-black shadow-[1px_1px_0px_#000000]">LLM
+                Analysis</span>
+              <span
+                class="px-2 py-0.5 bg-surface-paper-light border border-border-black font-label-code-sm text-label-code-sm font-bold text-ink-black shadow-[1px_1px_0px_#000000]">Semgrep</span>
+            </div>
+          </div>
+
+          <!-- Project 2: AapdaVision AI (Cyan Cyber Glow) -->
+          <div
+            class="project-card project-aapdavision bg-surface-paper-light border-4 border-border-black shadow-[6px_6px_0px_#000000] flex flex-col justify-between group">
+            <div class="p-space-md">
+              <div class="flex items-start justify-between gap-2 pb-space-sm border-b-3 border-border-black">
+                <div>
+                  <span
+                    class="font-label-code-sm text-label-code-sm uppercase font-extrabold bg-tertiary-container text-on-tertiary-container px-2 py-0.5 border border-border-black inline-block mb-1 shadow-[1px_1px_0px_#000000]">
+                    DISASTER INTEL // MULTI-HAZARD ML
+                  </span>
+                  <h3 class="font-headline-md text-headline-md font-extrabold text-ink-black uppercase tracking-tight">
+                    AapdaVision AI
+                  </h3>
+                  <p class="font-label-code-md text-label-code-md text-on-surface-variant font-bold">
+                    Real-Time Disaster Intelligence Platform
+                  </p>
+                </div>
+                <a class="tactile-btn p-2 bg-secondary-container border-2 border-border-black shadow-[3px_3px_0px_#000000] group-hover:bg-cyan-300 group-hover:rotate-6 transition-all"
+                  href="https://github.com/dev-muhammadabid/AapdaVision-AI" target="_blank" rel="noopener noreferrer"
+                  title="View AapdaVision AI on GitHub">
+                  <span class="material-symbols-outlined text-[20px] block text-ink-black">open_in_new</span>
+                </a>
+              </div>
+              <p class="font-body-sm text-body-sm text-ink-black font-medium my-space-md leading-relaxed">
+                A full-stack disaster intelligence platform integrating real-time environmental data to detect hazards,
+                forecast risks, and visualize impact zones.
+              </p>
+              <ul class="flex flex-col gap-1.5 font-body-sm text-body-sm text-on-surface-variant">
+                <li class="flex items-center gap-2">
+                  <span class="text-ink-black font-extrabold">▪</span>
+                  <span>USGS, Open-Meteo, NASA FIRMS &amp; GDACS streams</span>
+                </li>
+                <li class="flex items-center gap-2">
+                  <span class="text-ink-black font-extrabold">▪</span>
+                  <span>Floods, wildfires, quakes &amp; cyclones detection</span>
+                </li>
+                <li class="flex items-center gap-2">
+                  <span class="text-ink-black font-extrabold">▪</span>
+                  <span>6h, 12h, 24h forecasting (XGBoost/LightGBM)</span>
+                </li>
+                <li class="flex items-center gap-2">
+                  <span class="text-ink-black font-extrabold">▪</span>
+                  <span>PostGIS spatial risk &amp; real-time SSE alerts</span>
+                </li>
+              </ul>
+            </div>
+            <div class="p-space-md bg-surface-paper border-t-3 border-border-black flex flex-wrap gap-1.5">
+              <span
+                class="px-2 py-0.5 bg-primary-container border border-border-black font-label-code-sm text-label-code-sm font-bold text-ink-black shadow-[1px_1px_0px_#000000]">Spring
+                Boot</span>
+              <span
+                class="px-2 py-0.5 bg-secondary-container border border-border-black font-label-code-sm text-label-code-sm font-bold text-ink-black shadow-[1px_1px_0px_#000000]">Python
+                / FastAPI</span>
+              <span
+                class="px-2 py-0.5 bg-cyan-200 border border-border-black font-label-code-sm text-label-code-sm font-extrabold text-ink-black shadow-[1px_1px_0px_#000000]">PostGIS</span>
+              <span
+                class="px-2 py-0.5 bg-surface-paper-light border border-border-black font-label-code-sm text-label-code-sm font-bold text-ink-black shadow-[1px_1px_0px_#000000]">Next.js</span>
+              <span
+                class="px-2 py-0.5 bg-accent-lavender border border-border-black font-label-code-sm text-label-code-sm font-bold text-ink-black shadow-[1px_1px_0px_#000000]">SSE</span>
+            </div>
+          </div>
+
+          <!-- Project 3: Shayraana (Lavender Glow) -->
+          <div
+            class="project-card project-shayraana bg-surface-paper-light border-4 border-border-black shadow-[6px_6px_0px_#000000] flex flex-col justify-between group">
+            <div class="p-space-md">
+              <div class="flex items-start justify-between gap-2 pb-space-sm border-b-3 border-border-black">
+                <div>
+                  <span
+                    class="font-label-code-sm text-label-code-sm uppercase font-extrabold bg-accent-lavender text-ink-black px-2 py-0.5 border border-border-black inline-block mb-1 shadow-[1px_1px_0px_#000000]">
+                    SOCIAL PUBLISHING // WRITERS
+                  </span>
+                  <h3 class="font-headline-md text-headline-md font-extrabold text-ink-black uppercase tracking-tight">
+                    Shayraana
+                  </h3>
+                  <p class="font-label-code-md text-label-code-md text-on-surface-variant font-bold">
+                    Social Media Platform for Writers
+                  </p>
+                </div>
+                <a class="tactile-btn p-2 bg-secondary-container border-2 border-border-black shadow-[3px_3px_0px_#000000] group-hover:bg-purple-300 group-hover:rotate-6 transition-all"
+                  href="https://github.com/dev-muhammadabid/Shayraana" target="_blank" rel="noopener noreferrer"
+                  title="View Shayraana on GitHub">
+                  <span class="material-symbols-outlined text-[20px] block text-ink-black">open_in_new</span>
+                </a>
+              </div>
+              <p class="font-body-sm text-body-sm text-ink-black font-medium my-space-md leading-relaxed">
+                A social publishing platform designed for writers to publish, discover, and engage with original sher,
+                ghazal, nazm, and poetry.
+              </p>
+              <ul class="flex flex-col gap-1.5 font-body-sm text-body-sm text-on-surface-variant">
+                <li class="flex items-center gap-2">
+                  <span class="text-ink-black font-extrabold">▪</span>
+                  <span>Writer profiles &amp; authentic publishing workflows</span>
+                </li>
+                <li class="flex items-center gap-2">
+                  <span class="text-ink-black font-extrabold">▪</span>
+                  <span>Community-driven reading &amp; social interactions</span>
+                </li>
+                <li class="flex items-center gap-2">
+                  <span class="text-ink-black font-extrabold">▪</span>
+                  <span>Secure JWT authentication &amp; role management</span>
+                </li>
+                <li class="flex items-center gap-2">
+                  <span class="text-ink-black font-extrabold">▪</span>
+                  <span>REST APIs &amp; scalable social database models</span>
+                </li>
+              </ul>
+            </div>
+            <div class="p-space-md bg-surface-paper border-t-3 border-border-black flex flex-wrap gap-1.5">
+              <span
+                class="px-2 py-0.5 bg-accent-lavender border border-border-black font-label-code-sm text-label-code-sm font-extrabold text-ink-black shadow-[1px_1px_0px_#000000]">Full-Stack</span>
+              <span
+                class="px-2 py-0.5 bg-surface-paper-light border border-border-black font-label-code-sm text-label-code-sm font-bold text-ink-black shadow-[1px_1px_0px_#000000]">REST
+                API</span>
+              <span
+                class="px-2 py-0.5 bg-surface-paper-light border border-border-black font-label-code-sm text-label-code-sm font-bold text-ink-black shadow-[1px_1px_0px_#000000]">PostgreSQL</span>
+              <span
+                class="px-2 py-0.5 bg-secondary-container border border-border-black font-label-code-sm text-label-code-sm font-bold text-ink-black shadow-[1px_1px_0px_#000000]">JWT</span>
+            </div>
+          </div>
+
+          <!-- Project 4: SnapDocs (Yellow Electric Glow) -->
+          <div
+            class="project-card project-snapdocs bg-surface-paper-light border-4 border-border-black shadow-[6px_6px_0px_#000000] flex flex-col justify-between group">
+            <div class="p-space-md">
+              <div class="flex items-start justify-between gap-2 pb-space-sm border-b-3 border-border-black">
+                <div>
+                  <span
+                    class="font-label-code-sm text-label-code-sm uppercase font-extrabold bg-secondary-container text-ink-black px-2 py-0.5 border border-border-black inline-block mb-1 shadow-[1px_1px_0px_#000000]">
+                    CHROME EXTENSION // DOCUMENT EXPORT
+                  </span>
+                  <h3 class="font-headline-md text-headline-md font-extrabold text-ink-black uppercase tracking-tight">
+                    SnapDocs
+                  </h3>
+                  <p class="font-label-code-md text-label-code-md text-on-surface-variant font-bold">
+                    Chrome Productivity Extension
+                  </p>
+                </div>
+                <a class="tactile-btn p-2 bg-secondary-container border-2 border-border-black shadow-[3px_3px_0px_#000000] group-hover:bg-yellow-400 group-hover:rotate-6 transition-all"
+                  href="https://github.com/dev-muhammadabid/SnapDocs" target="_blank" rel="noopener noreferrer"
+                  title="View SnapDocs on GitHub">
+                  <span class="material-symbols-outlined text-[20px] block text-ink-black">open_in_new</span>
+                </a>
+              </div>
+              <p class="font-body-sm text-body-sm text-ink-black font-medium my-space-md leading-relaxed">
+                A productivity-focused Chrome extension that captures webpages and exports them into PDF, Word
+                documents, and full-page screenshots.
+              </p>
+              <ul class="flex flex-col gap-1.5 font-body-sm text-body-sm text-on-surface-variant">
+                <li class="flex items-center gap-2">
+                  <span class="text-ink-black font-extrabold">▪</span>
+                  <span>Full webpage capture with automatic scrolling</span>
+                </li>
+                <li class="flex items-center gap-2">
+                  <span class="text-ink-black font-extrabold">▪</span>
+                  <span>PDF and Word document export engines</span>
+                </li>
+                <li class="flex items-center gap-2">
+                  <span class="text-ink-black font-extrabold">▪</span>
+                  <span>Full screenshot capture &amp; layout preservation</span>
+                </li>
+                <li class="flex items-center gap-2">
+                  <span class="text-ink-black font-extrabold">▪</span>
+                  <span>Lightweight, user-friendly extension interface</span>
+                </li>
+              </ul>
+            </div>
+            <div class="p-space-md bg-surface-paper border-t-3 border-border-black flex flex-wrap gap-1.5">
+              <span
+                class="px-2 py-0.5 bg-secondary-container border border-border-black font-label-code-sm text-label-code-sm font-extrabold text-ink-black shadow-[1px_1px_0px_#000000]">Chrome
+                API</span>
+              <span
+                class="px-2 py-0.5 bg-surface-paper-light border border-border-black font-label-code-sm text-label-code-sm font-bold text-ink-black shadow-[1px_1px_0px_#000000]">JavaScript</span>
+              <span
+                class="px-2 py-0.5 bg-surface-paper-light border border-border-black font-label-code-sm text-label-code-sm font-bold text-ink-black shadow-[1px_1px_0px_#000000]">HTML5</span>
+              <span
+                class="px-2 py-0.5 bg-surface-paper-light border border-border-black font-label-code-sm text-label-code-sm font-bold text-ink-black shadow-[1px_1px_0px_#000000]">CSS3</span>
+            </div>
+          </div>
+
+          <!-- Project 5: RabbitWatch (Orange Flame Glow) -->
+          <div
+            class="project-card project-rabbitwatch bg-surface-paper-light border-4 border-border-black shadow-[6px_6px_0px_#000000] flex flex-col justify-between group md:col-span-2 lg:col-span-1">
+            <div class="p-space-md">
+              <div class="flex items-start justify-between gap-2 pb-space-sm border-b-3 border-border-black">
+                <div>
+                  <span
+                    class="font-label-code-sm text-label-code-sm uppercase font-extrabold bg-accent-orange text-ink-black px-2 py-0.5 border border-border-black inline-block mb-1 shadow-[1px_1px_0px_#000000]">
+                    DISTRIBUTED MESSAGING // OBSERVABILITY
+                  </span>
+                  <h3 class="font-headline-md text-headline-md font-extrabold text-ink-black uppercase tracking-tight">
+                    RabbitWatch
+                  </h3>
+                  <p class="font-label-code-md text-label-code-md text-on-surface-variant font-bold">
+                    RabbitMQ Monitoring Dashboard
+                  </p>
+                </div>
+                <a class="tactile-btn p-2 bg-secondary-container border-2 border-border-black shadow-[3px_3px_0px_#000000] group-hover:bg-orange-300 group-hover:rotate-6 transition-all"
+                  href="https://github.com/dev-muhammadabid/RabbitWatch" target="_blank" rel="noopener noreferrer"
+                  title="View RabbitWatch on GitHub">
+                  <span class="material-symbols-outlined text-[20px] block text-ink-black">open_in_new</span>
+                </a>
+              </div>
+              <p class="font-body-sm text-body-sm text-ink-black font-medium my-space-md leading-relaxed">
+                A real-time monitoring dashboard for RabbitMQ brokers and message queues, providing operational
+                visibility into distributed messaging infrastructure.
+              </p>
+              <ul class="flex flex-col gap-1.5 font-body-sm text-body-sm text-on-surface-variant">
+                <li class="flex items-center gap-2">
+                  <span class="text-ink-black font-extrabold">▪</span>
+                  <span>Queue statistics &amp; real-time throughput metrics</span>
+                </li>
+                <li class="flex items-center gap-2">
+                  <span class="text-ink-black font-extrabold">▪</span>
+                  <span>Broker health monitoring &amp; node telemetry</span>
+                </li>
+                <li class="flex items-center gap-2">
+                  <span class="text-ink-black font-extrabold">▪</span>
+                  <span>REST APIs for continuous metric ingestion</span>
+                </li>
+                <li class="flex items-center gap-2">
+                  <span class="text-ink-black font-extrabold">▪</span>
+                  <span>Interactive React visualizations for operations</span>
+                </li>
+              </ul>
+            </div>
+            <div class="p-space-md bg-surface-paper border-t-3 border-border-black flex flex-wrap gap-1.5">
+              <span
+                class="px-2 py-0.5 bg-primary-container border border-border-black font-label-code-sm text-label-code-sm font-bold text-ink-black shadow-[1px_1px_0px_#000000]">Java</span>
+              <span
+                class="px-2 py-0.5 bg-surface-paper-light border border-border-black font-label-code-sm text-label-code-sm font-bold text-ink-black shadow-[1px_1px_0px_#000000]">Spring
+                Boot</span>
+              <span
+                class="px-2 py-0.5 bg-accent-orange text-ink-black border border-border-black font-label-code-sm text-label-code-sm font-extrabold shadow-[1px_1px_0px_#000000]">RabbitMQ</span>
+              <span
+                class="px-2 py-0.5 bg-secondary-container border border-border-black font-label-code-sm text-label-code-sm font-bold text-ink-black shadow-[1px_1px_0px_#000000]">React</span>
             </div>
           </div>
 
         </div>
-      </div>
-    </section>
 
-    <!-- ═══════════════════════════════════════════
-         PROJECTS SECTION
-    ═══════════════════════════════════════════ -->
-    <section class="projects section-padding" id="projects">
-      <div class="section-inner">
-        <h2 class="section-title reveal-up">Projects</h2>
-        <div class="projects-grid">
-
-          <!-- VAULTLOCK -->
-          <div class="project-card glass-card reveal-up" data-tilt>
-            <div class="project-card-header">
-              <div class="project-icon">
-                <i class="fas fa-lock"></i>
-              </div>
-              <div class="project-links">
-                <a href="https://github.com/dev-muhammadabid" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
-              </div>
-            </div>
-            <h3 class="project-title">VaultLock</h3>
-            <p class="project-subtitle">Secure Document Vault</p>
-            <p class="project-desc">
-              A secure document management system with <span class="highlight">AES-256 client-side encryption</span>
-              and zero-knowledge architecture — encrypted data is never exposed in plaintext.
-            </p>
-            <ul class="project-features">
-              <li>AES-256 client-side encryption</li>
-              <li>Zero-knowledge architecture</li>
-              <li>OTP validation & metadata handling</li>
-              <li>IndexedDB encrypted local storage</li>
-            </ul>
-            <div class="project-tags">
-              <span>Spring Boot</span><span>AES-256</span><span>REST API</span><span>IndexedDB</span><span>OTP</span>
-            </div>
-          </div>
-
-          <!-- AISHORTS -->
-          <div class="project-card glass-card reveal-up" data-tilt>
-            <div class="project-card-header">
-              <div class="project-icon">
-                <i class="fas fa-robot"></i>
-              </div>
-              <div class="project-links">
-                <a href="https://github.com/dev-muhammadabid" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
-              </div>
-            </div>
-            <h3 class="project-title">AiShorts</h3>
-            <p class="project-subtitle">Real-Time AI Chatbot</p>
-            <p class="project-desc">
-              A real-time chatbot using <span class="highlight">WebSockets</span> for low-latency communication,
-              powered by Google Gemini API with <span class="highlight">40% faster response time</span>
-              through async processing.
-            </p>
-            <ul class="project-features">
-              <li>WebSocket real-time communication</li>
-              <li>Google Gemini API integration</li>
-              <li>40% response time improvement</li>
-              <li>Structured logging & error handling</li>
-            </ul>
-            <div class="project-tags">
-              <span>WebSocket</span><span>Gemini API</span><span>Spring Boot</span><span>Async</span>
-            </div>
-          </div>
-
-          <!-- PACMAN AI -->
-          <div class="project-card glass-card reveal-up" data-tilt>
-            <div class="project-card-header">
-              <div class="project-icon">
-                <i class="fas fa-gamepad"></i>
-              </div>
-              <div class="project-links">
-                <a href="https://github.com/dev-muhammadabid" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
-              </div>
-            </div>
-            <h3 class="project-title">PacMan — AI Edition</h3>
-            <p class="project-subtitle">AI-Powered Game</p>
-            <p class="project-desc">
-              Classic Pacman modernized with <span class="highlight">AI-controlled enemies</span> using BFS pathfinding,
-              Monte Carlo simulations, and dynamic difficulty adjustment.
-            </p>
-            <ul class="project-features">
-              <li>BFS pathfinding for enemy AI</li>
-              <li>Monte Carlo simulations</li>
-              <li>Dynamic difficulty adjustment</li>
-              <li>Preserved original game aesthetics</li>
-            </ul>
-            <div class="project-tags">
-              <span>JavaScript</span><span>BFS</span><span>Monte Carlo</span><span>AI</span>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </section>
-
-    <!-- ═══════════════════════════════════════════
-         EDUCATION SECTION
-    ═══════════════════════════════════════════ -->
-    <section class="edu section-padding" id="education">
-      <div class="section-inner">
-        <h2 class="section-title reveal-up">Education</h2>
-        <div class="edu-grid">
-
-          <div class="edu-card glass-card reveal-left">
-            <div class="edu-icon"><i class="fas fa-graduation-cap"></i></div>
-            <div class="edu-info">
-              <a href="Images/mcaR.png" target="_blank" rel="noopener">
-                <span class="edu-degree">Master's</span>
-                <p class="edu-program">Master of Computer Applications (MCA)</p>
-                <p class="edu-year">2023 — 2025</p>
-                <p class="edu-uni">Integral University, Lucknow</p>
-              </a>
-            </div>
-          </div>
-
-          <div class="edu-card glass-card reveal-right">
-            <div class="edu-icon"><i class="fas fa-university"></i></div>
-            <div class="edu-info">
-              <a href="#" target="_blank" rel="noopener">
-                <span class="edu-degree">Bachelor's</span>
-                <p class="edu-program">Bachelor of Computer Applications (BCA)</p>
-                <p class="edu-year">2020 — 2023</p>
-                <p class="edu-uni">Integral University, Lucknow</p>
-              </a>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </section>
-
-    <!-- ═══════════════════════════════════════════
-         CERTIFICATIONS SECTION
-    ═══════════════════════════════════════════ -->
-    <section class="certifications section-padding" id="certificate">
-      <div class="section-inner">
-        <h2 class="section-title reveal-up">Certifications</h2>
-        <div class="cert-grid">
-
-          <div class="cert-card glass-card reveal-up">
-            <a href="PDFs/Meta _ Back-End Developement.pdf" target="_blank" rel="noopener">
-              <img src="https://img.icons8.com/fluency/48/meta.png" alt="Meta" loading="lazy" />
-              <h3>Meta</h3>
-              <p>Introduction to Back-End Development</p>
-            </a>
-          </div>
-
-          <div class="cert-card glass-card reveal-up">
-            <a href="PDFs/Meta _ Front-End Development.pdf" target="_blank" rel="noopener">
-              <img src="https://img.icons8.com/fluency/48/meta.png" alt="Meta" loading="lazy" />
-              <h3>Meta</h3>
-              <p>Introduction to Front-End Development</p>
-            </a>
-          </div>
-
-          <div class="cert-card glass-card reveal-up">
-            <a href="PDFs/Meta _ Introduction to Databases.pdf" target="_blank" rel="noopener">
-              <img src="https://img.icons8.com/fluency/48/meta.png" alt="Meta" loading="lazy" />
-              <h3>Meta</h3>
-              <p>Introduction to Databases</p>
-            </a>
-          </div>
-
-          <div class="cert-card glass-card reveal-up">
-            <a href="PDFs/Meta _ HTML and CSS in depth.pdf" target="_blank" rel="noopener">
-              <img src="https://img.icons8.com/fluency/48/meta.png" alt="Meta" loading="lazy" />
-              <h3>Meta</h3>
-              <p>HTML &amp; CSS in Depth</p>
-            </a>
-          </div>
-
-          <div class="cert-card glass-card reveal-up">
-            <a href="PDFs/Meta _ Programming with JavaScript.pdf" target="_blank" rel="noopener">
-              <img src="https://img.icons8.com/fluency/48/meta.png" alt="Meta" loading="lazy" />
-              <h3>Meta</h3>
-              <p>Programming with JavaScript</p>
-            </a>
-          </div>
-
-          <div class="cert-card glass-card reveal-up">
-            <a href="PDFs/Meta _ Version Control.pdf" target="_blank" rel="noopener">
-              <img src="https://img.icons8.com/fluency/48/meta.png" alt="Meta" loading="lazy" />
-              <h3>Meta</h3>
-              <p>Version Control</p>
-            </a>
-          </div>
-
-          <div class="cert-card glass-card reveal-up">
-            <a href="PDFs/Accenture _ USER EXPERIENCE.pdf" target="_blank" rel="noopener">
-              <img src="Images/Accenture-Logo.png" alt="Accenture" loading="lazy" style="height:48px;width:auto;" />
-              <h3>Accenture</h3>
-              <p>User Experience</p>
-            </a>
-          </div>
-
-          <div class="cert-card glass-card reveal-up">
-            <a href="PDFs/Infosys _ Software Engineering Agile Software Development.pdf" target="_blank" rel="noopener">
-              <img src="Images/Infosys-Logo.png" alt="Infosys" loading="lazy" style="height:48px;width:auto;" />
-              <h3>Infosys</h3>
-              <p>Software Engineering &amp; Agile Development</p>
-            </a>
-          </div>
-
-          <div class="cert-card glass-card reveal-up">
-            <a href="PDFs/Cisco _ Full Stack Development with MERN.pdf" target="_blank" rel="noopener">
-              <img src="Images/Cisco-Logo.png" alt="Cisco" loading="lazy" style="height:48px;width:auto;" />
-              <h3>Cisco</h3>
-              <p>Full Stack Development with MERN</p>
-            </a>
-          </div>
-
-        </div>
-      </div>
-    </section>
-
-    <!-- ═══════════════════════════════════════════
-         CONTACT SECTION
-    ═══════════════════════════════════════════ -->
-    <section class="contact section-padding" id="contactme">
-      <div class="section-inner">
-        <h2 class="section-title reveal-up">Contact Me</h2>
-        <div class="contact-wrapper">
-          <div class="contact-info reveal-left">
-            <p class="contact-tagline">Let's build something great together.</p>
-            <div class="contact-links">
-              <a href="mailto:mail.muhammadabid@gmail.com" class="contact-link">
-                <i class="fas fa-envelope"></i>
-                <span>mail.muhammadabid@gmail.com</span>
-              </a>
-              <a href="https://www.linkedin.com/in/dev-abid/" target="_blank" rel="noopener" class="contact-link">
-                <i class="fab fa-linkedin"></i>
-                <span>linkedin.com/in/dev-abid</span>
-              </a>
-              <a href="https://github.com/dev-muhammadabid" target="_blank" rel="noopener" class="contact-link">
-                <i class="fab fa-github"></i>
-                <span>github.com/dev-muhammadabid</span>
-              </a>
-            </div>
-          </div>
-
-          <div class="contact-form-wrap reveal-right">
-            <form id="contactForm" onsubmit="sendEmail(); return false;" novalidate>
-              <p class="form-title">Get In Touch</p>
-              <div class="form-group">
-                <input type="text" id="contact_name" placeholder="Your Name" name="name" required autocomplete="name" />
-              </div>
-              <div class="form-group">
-                <input type="email" id="contact_email" placeholder="Your Email" name="email" required autocomplete="email" />
-              </div>
-              <div class="form-group">
-                <input type="tel" id="contact_number" placeholder="Your Phone (optional)" name="phone" autocomplete="tel" />
-              </div>
-              <div class="form-group">
-                <textarea id="contact_message" placeholder="Your Message" name="message" rows="4" required></textarea>
-              </div>
-              <button type="submit" id="contact_btn">
-                <span id="btn-text">Send Message</span>
-                <i class="fas fa-paper-plane"></i>
-              </button>
-            </form>
+        <div class="mt-space-2xl pt-space-xl border-t-4 border-border-black">
+          <div class="flex flex-wrap items-center justify-between gap-space-sm mb-space-md">
           </div>
         </div>
-      </div>
-    </section>
+
+      </section>
+
+      <!-- ─── EDUCATION & CERTIFICATIONS SPLIT SECTION ────────────── -->
+      <section class="w-full bg-surface-paper border-t-4 border-border-black py-space-2xl" id="education">
+        <div class="max-w-[1200px] mx-auto px-4 sm:px-gutter">
+          <div class="flex items-center gap-space-sm mb-space-xl">
+            <span
+              class="w-9 h-9 bg-tertiary-container border-3 border-border-black flex items-center justify-center font-headline-sm text-headline-sm font-extrabold shadow-[3px_3px_0px_#000000]">04</span>
+            <h2 class="font-headline-lg text-headline-lg uppercase font-extrabold text-ink-black tracking-tight">
+              Education &amp; Credentials
+            </h2>
+            <div class="h-1 flex-1 bg-border-black ml-space-sm"></div>
+          </div>
+
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl">
+
+            <!-- Education Column -->
+            <div class="lg:col-span-5 flex flex-col gap-space-md">
+              <div class="flex items-center gap-2 mb-1">
+                <span class="material-symbols-outlined text-[22px] text-tertiary font-bold">school</span>
+                <span class="font-headline-sm text-headline-sm uppercase font-extrabold text-ink-black">Academic
+                  Background</span>
+              </div>
+
+              <!-- Master's Card -->
+              <div
+                class="bg-surface-paper-light border-3 border-border-black p-space-md shadow-[5px_5px_0px_#000000] border-l-8 border-l-primary hover:-translate-y-1 transition-transform">
+                <span
+                  class="bg-primary-container text-ink-black font-label-code-sm text-label-code-sm font-extrabold uppercase px-2.5 py-0.5 border border-border-black inline-block mb-2 shadow-[1px_1px_0px_#000000]">
+                  MASTER'S DEGREE
+                </span>
+                <h4 class="font-headline-sm text-headline-sm font-extrabold text-ink-black leading-snug">
+                  Master of Computer Applications (MCA)
+                </h4>
+                <div
+                  class="flex items-center justify-between text-on-surface-variant font-label-code-md text-label-code-md mt-2 pt-2 border-t border-border-black">
+                  <span class="font-bold text-ink-black">Integral University, Lucknow</span>
+                  <span class="bg-surface-paper px-2 py-0.5 border border-border-black font-extrabold">2023 &ndash;
+                    2025</span>
+                </div>
+              </div>
+
+              <!-- Bachelor's Card -->
+              <div
+                class="bg-surface-paper-light border-3 border-border-black p-space-md shadow-[5px_5px_0px_#000000] border-l-8 border-l-secondary-container hover:-translate-y-1 transition-transform">
+                <span
+                  class="bg-secondary-container text-ink-black font-label-code-sm text-label-code-sm font-extrabold uppercase px-2.5 py-0.5 border border-border-black inline-block mb-2 shadow-[1px_1px_0px_#000000]">
+                  BACHELOR'S DEGREE
+                </span>
+                <h4 class="font-headline-sm text-headline-sm font-extrabold text-ink-black leading-snug">
+                  Bachelor of Computer Applications (BCA)
+                </h4>
+                <div
+                  class="flex items-center justify-between text-on-surface-variant font-label-code-md text-label-code-md mt-2 pt-2 border-t border-border-black">
+                  <span class="font-bold text-ink-black">Integral University, Lucknow</span>
+                  <span class="bg-surface-paper px-2 py-0.5 border border-border-black font-extrabold">2020 &ndash;
+                    2023</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Certifications Column -->
+            <div class="lg:col-span-7 flex flex-col gap-space-sm" id="certifications">
+              <div class="flex items-center justify-between gap-2 mb-1">
+                <div class="flex items-center gap-2">
+                  <span class="material-symbols-outlined text-[22px] text-primary font-bold">verified_user</span>
+                  <span
+                    class="font-headline-sm text-headline-sm uppercase font-extrabold text-ink-black">Certifications</span>
+                </div>
+                <span
+                  class="font-label-code-sm text-label-code-sm bg-surface-paper-light px-2.5 py-0.5 border-2 border-border-black font-extrabold shadow-[2px_2px_0px_#000000]">9
+                  CREDENTIALS VERIFIED</span>
+              </div>
+
+              <!-- Verified Industry Credentials Grid -->
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                <a class="flex items-center justify-between p-3 bg-surface-paper-light border-2 border-border-black shadow-[3px_3px_0px_#000000] hover:translate-x-0.5 hover:translate-y-0.5 hover:shadow-[1px_1px_0px_#000000] transition-all group"
+                  href="PDFs/Meta _ Back-End Developement.pdf" target="_blank" rel="noopener noreferrer">
+                  <div class="min-w-0 pr-2">
+                    <span class="font-label-code-sm text-label-code-sm text-tertiary font-extrabold block">META</span>
+                    <span class="font-body-sm text-body-sm font-bold text-ink-black truncate block">Introduction to
+                      Back-End Development</span>
+                  </div>
+                  <span
+                    class="material-symbols-outlined text-[18px] text-ink-black group-hover:translate-x-0.5 transition-transform">picture_as_pdf</span>
+                </a>
+
+                <a class="flex items-center justify-between p-3 bg-surface-paper-light border-2 border-border-black shadow-[3px_3px_0px_#000000] hover:translate-x-0.5 hover:translate-y-0.5 hover:shadow-[1px_1px_0px_#000000] transition-all group"
+                  href="PDFs/Meta _ Front-End Development.pdf" target="_blank" rel="noopener noreferrer">
+                  <div class="min-w-0 pr-2">
+                    <span class="font-label-code-sm text-label-code-sm text-tertiary font-extrabold block">META</span>
+                    <span class="font-body-sm text-body-sm font-bold text-ink-black truncate block">Introduction to
+                      Front-End Development</span>
+                  </div>
+                  <span
+                    class="material-symbols-outlined text-[18px] text-ink-black group-hover:translate-x-0.5 transition-transform">picture_as_pdf</span>
+                </a>
+
+                <a class="flex items-center justify-between p-3 bg-surface-paper-light border-2 border-border-black shadow-[3px_3px_0px_#000000] hover:translate-x-0.5 hover:translate-y-0.5 hover:shadow-[1px_1px_0px_#000000] transition-all group"
+                  href="PDFs/Meta _ Introduction to Databases.pdf" target="_blank" rel="noopener noreferrer">
+                  <div class="min-w-0 pr-2">
+                    <span class="font-label-code-sm text-label-code-sm text-tertiary font-extrabold block">META</span>
+                    <span class="font-body-sm text-body-sm font-bold text-ink-black truncate block">Introduction to
+                      Databases</span>
+                  </div>
+                  <span
+                    class="material-symbols-outlined text-[18px] text-ink-black group-hover:translate-x-0.5 transition-transform">picture_as_pdf</span>
+                </a>
+
+                <a class="flex items-center justify-between p-3 bg-surface-paper-light border-2 border-border-black shadow-[3px_3px_0px_#000000] hover:translate-x-0.5 hover:translate-y-0.5 hover:shadow-[1px_1px_0px_#000000] transition-all group"
+                  href="PDFs/Meta _ HTML and CSS in depth.pdf" target="_blank" rel="noopener noreferrer">
+                  <div class="min-w-0 pr-2">
+                    <span class="font-label-code-sm text-label-code-sm text-tertiary font-extrabold block">META</span>
+                    <span class="font-body-sm text-body-sm font-bold text-ink-black truncate block">HTML &amp; CSS in
+                      Depth</span>
+                  </div>
+                  <span
+                    class="material-symbols-outlined text-[18px] text-ink-black group-hover:translate-x-0.5 transition-transform">picture_as_pdf</span>
+                </a>
+
+                <a class="flex items-center justify-between p-3 bg-surface-paper-light border-2 border-border-black shadow-[3px_3px_0px_#000000] hover:translate-x-0.5 hover:translate-y-0.5 hover:shadow-[1px_1px_0px_#000000] transition-all group"
+                  href="PDFs/Meta _ Programming with JavaScript.pdf" target="_blank" rel="noopener noreferrer">
+                  <div class="min-w-0 pr-2">
+                    <span class="font-label-code-sm text-label-code-sm text-tertiary font-extrabold block">META</span>
+                    <span class="font-body-sm text-body-sm font-bold text-ink-black truncate block">Programming with
+                      JavaScript</span>
+                  </div>
+                  <span
+                    class="material-symbols-outlined text-[18px] text-ink-black group-hover:translate-x-0.5 transition-transform">picture_as_pdf</span>
+                </a>
+
+                <a class="flex items-center justify-between p-3 bg-surface-paper-light border-2 border-border-black shadow-[3px_3px_0px_#000000] hover:translate-x-0.5 hover:translate-y-0.5 hover:shadow-[1px_1px_0px_#000000] transition-all group"
+                  href="PDFs/Meta _ Version Control.pdf" target="_blank" rel="noopener noreferrer">
+                  <div class="min-w-0 pr-2">
+                    <span class="font-label-code-sm text-label-code-sm text-tertiary font-extrabold block">META</span>
+                    <span class="font-body-sm text-body-sm font-bold text-ink-black truncate block">Version
+                      Control</span>
+                  </div>
+                  <span
+                    class="material-symbols-outlined text-[18px] text-ink-black group-hover:translate-x-0.5 transition-transform">picture_as_pdf</span>
+                </a>
+
+                <a class="flex items-center justify-between p-3 bg-surface-paper-light border-2 border-border-black shadow-[3px_3px_0px_#000000] hover:translate-x-0.5 hover:translate-y-0.5 hover:shadow-[1px_1px_0px_#000000] transition-all group"
+                  href="PDFs/Cisco _ Full Stack Development with MERN.pdf" target="_blank" rel="noopener noreferrer">
+                  <div class="min-w-0 pr-2">
+                    <span
+                      class="font-label-code-sm text-label-code-sm text-accent-orange font-extrabold block">CISCO</span>
+                    <span class="font-body-sm text-body-sm font-bold text-ink-black truncate block">Full Stack
+                      Development with MERN</span>
+                  </div>
+                  <span
+                    class="material-symbols-outlined text-[18px] text-ink-black group-hover:translate-x-0.5 transition-transform">picture_as_pdf</span>
+                </a>
+
+                <a class="flex items-center justify-between p-3 bg-surface-paper-light border-2 border-border-black shadow-[3px_3px_0px_#000000] hover:translate-x-0.5 hover:translate-y-0.5 hover:shadow-[1px_1px_0px_#000000] transition-all group"
+                  href="PDFs/Infosys _ Software Engineering Agile Software Development.pdf" target="_blank"
+                  rel="noopener noreferrer">
+                  <div class="min-w-0 pr-2">
+                    <span class="font-label-code-sm text-label-code-sm text-primary font-extrabold block">INFOSYS</span>
+                    <span class="font-body-sm text-body-sm font-bold text-ink-black truncate block">Software Engineering
+                      &amp; Agile</span>
+                  </div>
+                  <span
+                    class="material-symbols-outlined text-[18px] text-ink-black group-hover:translate-x-0.5 transition-transform">picture_as_pdf</span>
+                </a>
+
+                <a class="flex items-center justify-between p-3 bg-surface-paper-light border-2 border-border-black shadow-[3px_3px_0px_#000000] hover:translate-x-0.5 hover:translate-y-0.5 hover:shadow-[1px_1px_0px_#000000] transition-all group sm:col-span-2"
+                  href="PDFs/Accenture _ USER EXPERIENCE.pdf" target="_blank" rel="noopener noreferrer">
+                  <div class="min-w-0 pr-2">
+                    <span
+                      class="font-label-code-sm text-label-code-sm text-accent-lavender font-extrabold block">ACCENTURE</span>
+                    <span class="font-body-sm text-body-sm font-bold text-ink-black truncate block">User
+                      Experience</span>
+                  </div>
+                  <span
+                    class="material-symbols-outlined text-[18px] text-ink-black group-hover:translate-x-0.5 transition-transform">picture_as_pdf</span>
+                </a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- ─── CONTACT & INQUIRY SECTION ────────────────────────────── -->
+      <section class="w-full max-w-[1200px] mx-auto px-4 sm:px-gutter py-space-2xl" id="contact">
+        <div
+          class="bg-secondary-container border-4 border-border-black p-space-lg md:p-space-xl shadow-[8px_8px_0px_#000000] relative">
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl">
+
+            <!-- Direct Contacts Column -->
+            <div class="lg:col-span-5 flex flex-col justify-between">
+              <div>
+                <div
+                  class="inline-block bg-ink-black text-on-primary font-label-code-sm text-label-code-sm uppercase font-extrabold px-3 py-1 mb-2 border-2 border-border-black shadow-[2px_2px_0px_#000000]">
+                  // 05: OPEN CHANNEL
+                </div>
+                <h2
+                  class="font-headline-lg text-headline-lg uppercase font-extrabold text-ink-black tracking-tight leading-tight">
+                  Let's build something great together.
+                </h2>
+                <p class="font-body-md text-body-md text-ink-black font-semibold mt-3 max-w-sm">
+                  I am open to distributed backend roles, full-stack engineering, and challenging architectural
+                  problems.
+                </p>
+              </div>
+
+              <div class="flex flex-col gap-3 my-space-lg">
+                <a class="tactile-btn inline-flex items-center gap-3 p-3 bg-surface-paper-light border-3 border-border-black shadow-[4px_4px_0px_#000000] font-label-code-md text-label-code-md font-bold text-ink-black hover:bg-primary-container"
+                  href="mailto:mail.muhammadabid@gmail.com">
+                  <span class="material-symbols-outlined text-[20px]">mail</span>
+                  <span class="truncate">mail.muhammadabid@gmail.com</span>
+                </a>
+                <a class="tactile-btn inline-flex items-center justify-between p-3 bg-surface-paper-light border-3 border-border-black shadow-[4px_4px_0px_#000000] font-label-code-md text-label-code-md font-bold text-ink-black hover:bg-tertiary hover:text-on-tertiary"
+                  href="https://www.linkedin.com/in/dev-abid/" target="_blank" rel="noopener noreferrer">
+                  <span class="flex items-center gap-3">
+                    <span class="material-symbols-outlined text-[20px]">link</span>
+                    linkedin.com/in/dev-abid
+                  </span>
+                  <span class="material-symbols-outlined text-[16px]">north_east</span>
+                </a>
+                <a class="tactile-btn inline-flex items-center justify-between p-3 bg-surface-paper-light border-3 border-border-black shadow-[4px_4px_0px_#000000] font-label-code-md text-label-code-md font-bold text-ink-black hover:bg-ink-black hover:text-on-primary"
+                  href="https://github.com/dev-muhammadabid" target="_blank" rel="noopener noreferrer">
+                  <span class="flex items-center gap-3">
+                    <span class="material-symbols-outlined text-[20px]">terminal</span>
+                    github.com/dev-muhammadabid
+                  </span>
+                  <span class="material-symbols-outlined text-[16px]">north_east</span>
+                </a>
+              </div>
+
+              <div
+                class="font-label-code-sm text-label-code-sm text-ink-black font-bold uppercase flex items-center gap-2">
+                <span class="w-3 h-3 bg-primary-container border border-border-black inline-block"></span>
+                RESPONSE TIME &lt; 24 HOURS GUARANTEED
+              </div>
+            </div>
+
+            <!-- Tactile Brutalist Interactive Form -->
+            <div
+              class="lg:col-span-7 bg-surface-paper-light border-4 border-border-black p-space-lg shadow-[6px_6px_0px_#000000]">
+              <div class="flex items-center justify-between border-b-3 border-border-black pb-2 mb-space-md">
+                <h3 class="font-headline-sm text-headline-sm uppercase font-extrabold text-ink-black">
+                  Get In Touch
+                </h3>
+                <span
+                  class="font-label-code-sm text-label-code-sm bg-surface-paper px-2.5 py-0.5 border border-border-black font-extrabold">DISPATCH
+                  MSG</span>
+              </div>
+
+              <form id="contactForm" class="flex flex-col gap-space-md" novalidate>
+                <div class="flex flex-col gap-1">
+                  <label for="contact_name"
+                    class="font-label-code-md text-label-code-md font-extrabold uppercase text-ink-black">
+                    Your Name <span class="text-error">*</span>
+                  </label>
+                  <input id="contact_name" name="name"
+                    class="w-full bg-surface-paper border-2 border-border-black p-3 font-label-code-md text-label-code-md text-ink-black outline-none focus:bg-surface-paper-light focus:shadow-[4px_4px_0px_#000000] transition-all"
+                    placeholder="e.g. Alex Morgan" required type="text" autocomplete="name" maxlength="80" />
+                </div>
+
+                <div class="flex flex-col gap-1">
+                  <label for="contact_email"
+                    class="font-label-code-md text-label-code-md font-extrabold uppercase text-ink-black">
+                    Your Email Address <span class="text-error">*</span>
+                  </label>
+                  <input id="contact_email" name="email"
+                    class="w-full bg-surface-paper border-2 border-border-black p-3 font-label-code-md text-label-code-md text-ink-black outline-none focus:bg-surface-paper-light focus:shadow-[4px_4px_0px_#000000] transition-all"
+                    placeholder="name@company.domain" required type="email" autocomplete="email" maxlength="100" />
+                </div>
+
+                <div class="flex flex-col gap-1">
+                  <label for="contact_message"
+                    class="font-label-code-md text-label-code-md font-extrabold uppercase text-ink-black">
+                    Message Content <span class="text-error">*</span>
+                  </label>
+                  <textarea id="contact_message" name="message"
+                    class="w-full bg-surface-paper border-2 border-border-black p-3 font-label-code-md text-label-code-md text-ink-black outline-none focus:bg-surface-paper-light focus:shadow-[4px_4px_0px_#000000] transition-all resize-none"
+                    placeholder="Let me know about your project, architecture needs, or role details..." required
+                    rows="4" maxlength="3000"></textarea>
+                </div>
+
+                <button
+                  class="tactile-btn w-full py-4 px-6 bg-primary-container text-ink-black font-headline-sm text-headline-sm uppercase font-extrabold border-3 border-border-black shadow-[5px_5px_0px_#000000] hover:bg-emerald-400 flex items-center justify-center gap-2 cursor-pointer"
+                  id="submitBtn" type="submit">
+                  <span>Send Message</span>
+                  <span class="material-symbols-outlined text-[20px]">send</span>
+                </button>
+              </form>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+    </div>
   </main>
 
-  <!-- FOOTER -->
-  <footer>
-    <section class="last_footer">
-      <p>© 2025 Muhammad Abid — Built with passion.</p>
-      <div class="social-icons">
-        <a href="https://www.linkedin.com/in/dev-abid/" target="_blank" rel="noopener" class="icon" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-        <a href="https://github.com/dev-muhammadabid" target="_blank" rel="noopener" class="icon" aria-label="GitHub"><i class="fab fa-github"></i></a>
-        <a href="https://www.instagram.com/abid_zaeem/" target="_blank" rel="noopener" class="icon" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-        <a href="https://www.facebook.com/abid.zaeem.52/" target="_blank" rel="noopener" class="icon" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
-        <a href="https://twitter.com/abid__zaeem" target="_blank" rel="noopener" class="icon" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+  <!-- ═══════════════════════════════════════════════════════════════
+       FOOTER WITH MARQUEE TICKER ANIMATION
+  ═══════════════════════════════════════════════════════════════ -->
+  <footer class="w-full bg-surface-paper-light border-t-4 border-border-black">
+
+    <!-- Dynamic Infinite Horizontal Marquee Ticker -->
+    <div class="w-full bg-secondary-container border-b-3 border-border-black py-2.5 overflow-hidden">
+      <div class="animate-marquee whitespace-nowrap flex items-center">
+        <div
+          class="flex items-center gap-space-lg text-ink-black font-label-code-md text-label-code-md uppercase tracking-wider font-extrabold px-4">
+          <span>[STATUS: ONLINE]</span>
+          <span>▪</span>
+          <span>AVAILABLE FOR CONTRACT &amp; FULL-TIME ROLES</span>
+          <span>▪</span>
+          <span>AI &amp; Full-Stack Development</span>
+          <span>▪</span>
+          <span>Native Android Development</span>
+          <span>▪</span>
+          <span>Native iOS Development</span>
+          <span>▪</span>
+          <span>[STATUS: READY TO SHIP]</span>
+        </div>
+        <div
+          class="flex items-center gap-space-lg text-ink-black font-label-code-md text-label-code-md uppercase tracking-wider font-extrabold px-4">
+          <span>[STATUS: ONLINE]</span>
+          <span>▪</span>
+          <span>AVAILABLE FOR CONTRACT &amp; FULL-TIME ROLES</span>
+          <span>▪</span>
+          <span>AI &amp; Full-Stack Development</span>
+          <span>▪</span>
+          <span>Native Android Development</span>
+          <span>▪</span>
+          <span>Native iOS Development</span>
+          <span>▪</span>
+          <span>[STATUS: READY TO SHIP]</span>
+        </div>
       </div>
-    </section>
+    </div>
+
+    <div class="max-w-[1200px] mx-auto px-4 sm:px-gutter py-space-xl">
+      <div class="grid grid-cols-1 md:grid-cols-12 gap-gutter items-start pb-space-lg border-b-3 border-border-black">
+        <div class="md:col-span-6 flex flex-col gap-space-xs">
+          <div class="inline-block">
+            <span class="font-headline-lg text-headline-lg font-extrabold text-ink-black tracking-tight">MUHAMMAD ABID
+              </span>
+          </div>
+          <p class="font-body-md text-body-md text-on-surface-variant max-w-md">
+            AI & Full-Stack &amp; Engineer specializing in high-throughput systems, event architectures,
+            and tactile user interfaces.
+          </p>
+        </div>
+
+        <div class="md:col-span-6 flex flex-col md:items-end justify-between gap-space-md">
+          <span class="font-label-code-md text-label-code-md uppercase tracking-wider text-ink-black font-bold">Connect
+            Across Network</span>
+          <div class="flex flex-wrap items-center gap-space-sm">
+            <a class="tactile-btn inline-flex items-center gap-space-xs px-3.5 py-2 bg-surface border-2 border-border-black shadow-[3px_3px_0px_#000000] font-label-code-md text-label-code-md uppercase font-bold text-ink-black hover:bg-ink-black hover:text-on-primary"
+              href="https://github.com/dev-muhammadabid" target="_blank" rel="noopener noreferrer">
+              GitHub <span class="material-symbols-outlined text-[16px]">north_east</span>
+            </a>
+            <a class="tactile-btn inline-flex items-center gap-space-xs px-3.5 py-2 bg-surface border-2 border-border-black shadow-[3px_3px_0px_#000000] font-label-code-md text-label-code-md uppercase font-bold text-ink-black hover:bg-tertiary hover:text-on-tertiary"
+              href="https://www.linkedin.com/in/dev-abid/" target="_blank" rel="noopener noreferrer">
+              LinkedIn <span class="material-symbols-outlined text-[16px]">north_east</span>
+            </a>
+            <a class="tactile-btn inline-flex items-center gap-space-xs px-3.5 py-2 bg-surface border-2 border-border-black shadow-[3px_3px_0px_#000000] font-label-code-md text-label-code-md uppercase font-bold text-ink-black hover:bg-accent-lavender hover:text-ink-black"
+              href="mailto:mail.muhammadabid@gmail.com">
+              Email <span class="material-symbols-outlined text-[16px]">north_east</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="pt-space-md flex flex-col sm:flex-row items-center justify-between gap-space-sm font-label-code-sm text-label-code-sm text-on-surface-variant">
+        <p>© 2026 Muhammad Abid Mansoori.</p>
+        <div class="flex items-center gap-space-md">
+          <span class="flex items-center gap-1.5 text-ink-black font-bold">
+            <span class="w-2.5 h-2.5 bg-primary-container border border-border-black inline-block"></span>
+            ALL SYSTEMS NOMINAL
+          </span>
+          <a class="hover:text-ink-black underline decoration-2 font-bold" data-path="home" href="#">Back to Top</a>
+        </div>
+      </div>
+    </div>
   </footer>
 
+  <!-- ═══════════════════════════════════════════════════════════════
+       MOBILE FLOATING TACTILE BOTTOM NAVIGATION BAR (XL:HIDDEN)
+  ═══════════════════════════════════════════════════════════════ -->
+  <nav
+    class="fixed bottom-3 left-4 right-4 z-50 bg-surface-paper-light border-3 border-border-black shadow-[4px_4px_0px_#000000] flex items-center justify-around py-2 px-1 xl:hidden">
+    <a class="flex flex-col items-center text-ink-black hover:text-primary active:scale-95" href="#">
+      <span class="material-symbols-outlined text-[20px]">home</span>
+      <span class="font-label-code-sm text-[10px] font-extrabold uppercase">Home</span>
+    </a>
+    <a class="flex flex-col items-center text-ink-black hover:text-primary active:scale-95" href="#about">
+      <span class="material-symbols-outlined text-[20px]">person</span>
+      <span class="font-label-code-sm text-[10px] font-extrabold uppercase">About</span>
+    </a>
+    <a class="flex flex-col items-center text-ink-black hover:text-primary active:scale-95" href="#experience">
+      <span class="material-symbols-outlined text-[20px]">work</span>
+      <span class="font-label-code-sm text-[10px] font-extrabold uppercase">Exp</span>
+    </a>
+    <a class="flex flex-col items-center text-ink-black hover:text-primary active:scale-95" href="#projects">
+      <span class="material-symbols-outlined text-[20px]">code_blocks</span>
+      <span class="font-label-code-sm text-[10px] font-extrabold uppercase">Projects</span>
+    </a>
+    <a class="flex flex-col items-center text-ink-black hover:text-primary active:scale-95" href="#contact">
+      <span class="material-symbols-outlined text-[20px]">mail</span>
+      <span class="font-label-code-sm text-[10px] font-extrabold uppercase">Contact</span>
+    </a>
+  </nav>
+
+  <!-- JavaScript Core -->
   <script src="index.js"></script>
-  <script src="https://smtpjs.com/v3/smtp.js"></script>
 </body>
+
 </html>
